@@ -7,11 +7,10 @@ import Card from "@/components/ui/Card";
 import ImageSlider from "@/components/ui/ImageSlider";
 import AnimatedText from "@/components/ui/AnimatedText";
 import WaveSeparator from "@/components/ui/WaveSeparator";
-import BrushText from "@/components/ui/BrushText";
 import BackgroundShape from "@/components/ui/BackgroundShape";
 import homepageData from "../../building/crawled-data/homepage.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
-import { heroReveal, scrollStagger, scrollFadeUp, parallax, organicFadeScale, focusBlur } from "@/utils/gsapAnimations";
+import { heroReveal, scrollStagger, scrollFadeUp, parallax, focusBlur } from "@/utils/gsapAnimations";
 import { useRef } from "react";
 
 export default function Home() {
@@ -27,9 +26,9 @@ export default function Home() {
     // Hero animation
     heroReveal(".hero-slider");
 
-    // Card grid with organic fade and scale
-    organicFadeScale(".card-item", {
-      duration: 1.2,
+    // Card grid stagger animation
+    scrollStagger(".card-item", {
+      duration: 0.8,
       stagger: 0.15,
     });
 
@@ -44,9 +43,9 @@ export default function Home() {
       parallax(welcomeImageRef.current, { speed: -15 });
     }
 
-    // CTA sections with organic fade
-    organicFadeScale(".cta-section", {
-      duration: 1,
+    // CTA sections
+    scrollFadeUp(".cta-section", {
+      duration: 0.8,
     });
   }, []);
 
@@ -73,13 +72,12 @@ export default function Home() {
         <WaveSeparator position="top" color="cream" />
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
-            <BrushText
+            <AnimatedText
               as="h1"
               className="font-display text-display-md text-olive mb-6"
-              triggerOnScroll={true}
             >
               {welcome.title}
-            </BrushText>
+            </AnimatedText>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               {welcome.description}
             </p>
@@ -170,13 +168,12 @@ export default function Home() {
         <WaveSeparator position="top" color="cream" />
         <div>
           <div className="text-center mb-12">
-            <BrushText
+            <AnimatedText
               as="h2"
               className="font-display text-display-sm text-olive mb-4"
-              triggerOnScroll={true}
             >
               Our Cottages
-            </BrushText>
+            </AnimatedText>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Nine private cottages, each with its own unique décor and
               personality

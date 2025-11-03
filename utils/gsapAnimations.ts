@@ -356,6 +356,15 @@ export const focusBlur = (container: HTMLElement, itemSelector: string) => {
 
   const handleMouseEnter = (e: Event) => {
     const target = e.currentTarget as HTMLElement;
+
+    // First reset all items to full opacity
+    gsap.to(items, {
+      opacity: 1,
+      duration: 0.2,
+      ease: "power2.out",
+    });
+
+    // Then blur non-hovered items
     items.forEach((item) => {
       if (item !== target) {
         gsap.to(item, {
