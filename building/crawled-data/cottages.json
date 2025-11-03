@@ -1,0 +1,612 @@
+{
+  "page": "cottages",
+  "cottages": [
+    {
+      "id": "cottage-1",
+      "name": "The Big House",
+      "subtitle": "Cottage 1",
+      "slug": "the-big-house",
+      "capacity": "Comfortably sleeps 8",
+      "shortDescription": "This house-size cottage is the perfect accommodation for one or more families to enjoy the beautiful Coffs Harbour hinterland. With 3 bedrooms, a sofa bed and the option to add rollaway beds, the house can comfortably sleep up to 8 people.",
+      "longDescription": [
+        "This house-size cottage is the perfect accommodation for one or more families to enjoy the beautiful Coffs Harbour hinterland. With 3 bedrooms, a sofa bed and the option to add rollaway beds the house can comfortably sleep up to 8 people. Start planning that family reunion today.",
+        "There will be no family fights over who gets to use the bathroom first. This house has two full bathrooms and an additional guest toilet. And we know how families like to congregate in the kitchen, so you'll love the spacious well-equipped kitchen with plenty of room for everyone.",
+        "Of course if holidaying with friends is more your thing, The Big House is perfect for two or more couples or families to share. There's plenty of room to move and no need to invade each other's personal space. Spread out through the extra large dining/lounge area and onto the spacious outdoor deck.",
+        "As with all our accommodation, this house is pet-friendly so if the dog or cat wants to come along, they are welcome! The veranda is fully fenced so it's a perfect place for pets to play without worrying our friendly native wildlife.",
+        "And of course you are welcome to wander down to the beautifully landscaped split-level pool deck for a dip or just to admire a different view of the gorgeous Coffs Harbour hinterland. Maybe gather the whole family at the pool for a pizza night using the shared wood-fired oven. Or enjoy a game of tennis or boules."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 2
+        },
+        {
+          "type": "Twin",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": true
+        }
+      ],
+      "bathrooms": 3,
+      "features": [
+        "2 Queen bedrooms",
+        "1 Twin bedroom",
+        "1 Double pull out sofa beds in the lounge",
+        "1 guest toilet",
+        "Pet-friendly",
+        "Free Wifi",
+        "Reverse cycle air conditioning",
+        "Fully fenced veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "Sofa bed and rollaway beds will incur nominal additional charge.",
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-30-e1605753114916-1024x407.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-30-e1605753114916-300x300.jpg",
+          "alt": "Family Friendly Accommodation Coffs Harbour"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-32-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-32-300x300.jpg",
+          "alt": "Boutique Cabin in Bush Coffs Harbour Accommodation"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-4-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-4-300x300.jpg",
+          "alt": "Large Living Open Floor Plan with Fire place Coffs Harbour"
+        }
+      ]
+    },
+    {
+      "id": "cottage-2",
+      "name": "Tribal Cottage",
+      "subtitle": "Cottage 2",
+      "slug": "tribal-cottage",
+      "capacity": "Perfect for two couples or a family",
+      "shortDescription": "Looking for unique accommodation for your Coffs Coast holiday? Look no further than our Tribal Cottage with its earthy mix of classic and contemporary Aboriginal art and hand selected tribal crafts and wall hangings.",
+      "longDescription": [
+        "Looking for unique accommodation for your Coffs Coast holiday? Look no further than our Tribal Cottage with its earthy mix of classic and contemporary Aboriginal art and hand selected tribal crafts and wall hangings.",
+        "The vibrant colours inside your cottage blend beautifully with the blue skies and green trees beyond the balcony. You will feel at one with this land.",
+        "The unique Tribal Cottage has 1 queen bedroom with ensuite, and 1 twin bedroom with large bathroom, so it's perfect for a family get together. The living space is home to two utterly comfortable couches perfect for relaxing in front of the open fire.",
+        "The hammock chair on the large private veranda is perfect for catching up on some reading, sharing a sundowner with friends or simply staring out at Friday Creek Retreat's peaceful valley.",
+        "Only moments from the beaches of the Coffs Coast, yet the tranquil setting and tribal décor make you feel like you are truly in the wild.",
+        "As with all our unique accommodation, this cottage is pet-friendly so your dog or cat can get tribal too."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Twin",
+          "count": 1
+        }
+      ],
+      "bathrooms": 2,
+      "features": [
+        "1 Queen bedroom and 1 twin bedroom",
+        "2 bathrooms (1 ensuite with shower, 1 large bathroom with claw foot bath and shower)",
+        "Pet-friendly",
+        "Free Wifi",
+        "Reverse cycle air conditioning",
+        "Open veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-68-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-68-150x150.jpg",
+          "alt": "Holiday Rental Cabin Coffs Harbour Pet Friendly"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-43-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-43-150x150.jpg",
+          "alt": "Boutique Cottage in Coffs Harbour Hinterland Friday Creek Retreat"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-42-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-42-150x150.jpg",
+          "alt": "Winter Open Fire Cabin in the Bush Coffs Harbour Airbnb"
+        }
+      ]
+    },
+    {
+      "id": "cottage-3",
+      "name": "Asian Cottage",
+      "subtitle": "Cottage 3",
+      "slug": "asian-cottage",
+      "capacity": "A perfect cottage for two",
+      "shortDescription": "Our Asian cottage for two, beautifully blends Asian culture with the rolling green hills of the Coffs hinterland. Your romantic 1-bedroom getaway is far away from the everyday.",
+      "longDescription": [
+        "Our Asian cottage for two, beautifully blends Asian culture with the rolling green hills of the Coffs hinterland. Your romantic 1-bedroom getaway is far away from the everyday.",
+        "The cottage blends authentic old Japanese artwork and stunning antique Asian furniture with the startling blues and greens of the Coffs hinterland. This fusion of Asian culture and Australian landscape evokes a sense of inner calm and balance.",
+        "The queen-sized bedroom looks across the lush Friday Creek valley and the corner spa in your full sized bathroom is made for two and perfect for relaxation. Get into a Zen state of mind!",
+        "Bring along your favourite Asian ingredients, so the two of you can experiment in the cottage's fully equipped kitchen. Maybe enjoy some home made Sushi!",
+        "All our cottages are pet-friendly, so if you want your cottage for two to become a cottage for three that's just fine! Oh and there's a pull out couch in the living room in case some extra humans want to join you too."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": false
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "1 double pull out sofa bed in the lounge",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-179-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-179-150x150.jpg",
+          "alt": "Boutique Accommodation Coffs Harbour Getaway"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-182-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-182-150x150.jpg",
+          "alt": "Friday Creek Retreat Coffs harbour Accommodation"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-183-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-183-150x150.jpg",
+          "alt": "Spa Bath Coffs Harbour Hinterland Accommodation"
+        }
+      ]
+    },
+    {
+      "id": "cottage-4",
+      "name": "High Country Cottage",
+      "subtitle": "Cottage 4",
+      "slug": "high-country-cottage",
+      "capacity": "A perfect couples' retreat",
+      "shortDescription": "This cottage is an idyllic couples retreat: a place to escape the stresses of city life and rediscover each other in Coffs Harbour's hinterland hills.",
+      "longDescription": [
+        "This cottage is an idyllic couples retreat: a place to escape the stresses of city life and rediscover each other in Coffs Harbour's hinterland hills.",
+        "You will love the rustic, country feel of this cottage, with its rugged timber exterior, homey comforts inside and setting amongst the trees and green pastures of our 100-acre property.",
+        "Everything about this cottage is designed to create the perfect sanctuary for couples. Nestle yourselves amongst the country-style linen and plump cushions of the queen bedroom. Soak together in the corner spa of the large bathroom. Make a romantic dinner for two in the fully equipped kitchen. Spend lazy winter hours curled up in front of the open-fireplace during the winter months.",
+        "Take a lover's stroll through the pastures and stop for a rest at our beautifully landscaped pool deck. Or explore the restaurants, markets and scenic drives in the lovely Coffs Harbour hinterland region.",
+        "All our cottages are pet-friendly. So if you want to cuddle with your dog as well as your partner (or instead) that's absolutely fine with us. There's also a pull out bed in the living room if you want extra humans to curl up with as well."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": false
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "1 double pull out sofa bed in the lounge",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-166-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-166-150x150.jpg",
+          "alt": "Australian Cottage Rental Coffs Harbour"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-158-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-158-150x150.jpg",
+          "alt": "Rustic Cabin Accommodation Coffs Harbour"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-170-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-170-150x150.jpg",
+          "alt": "Australian style cottage holiday rental"
+        }
+      ]
+    },
+    {
+      "id": "cottage-5",
+      "name": "Gumbay",
+      "subtitle": "Cottage 5",
+      "slug": "gumbay",
+      "capacity": "Perfect for couples or quiet escapes",
+      "shortDescription": "Nestled in the heart of the valley, Gumbay celebrates the deep connection between forest and land. Surrounded by lush greenery and timber finishes, this cabin is designed to bring the outdoors in—soft, natural, and grounding.",
+      "longDescription": [
+        "Nestled in the heart of the valley, Gumbay celebrates the deep connection between forest and land. Surrounded by lush greenery and timber finishes, this cabin is designed to bring the outdoors in—soft, natural, and grounding. Step inside and you'll find a gentle, grounding space—where soft tones, leafy accents, and flowing textures invite you to slow down, breathe, and reconnect with nature.",
+        "Perfect for couples or quiet escapes, Gumbay offers the warmth of timber, the freshness of the forest, and the spirit of nature.",
+        "You can while away the hours reading in the hammock chair on the verandah, or curled up in front of the open fireplace in the winter months. If you're feeling restless, get out and explore the beauty of the Coffs Coast or just wander down to our beautifully landscaped pool and indulge in a wood fired pizza oven.",
+        "All our boutique cottages are pet-friendly so feel free to bring along your favourite four-legged friend. And there's a double pull out couch in the living room if some of your human friends want to come along too."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": false
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "1 double pull out sofa bed in the lounge",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-new-4-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-new-4-150x150.jpg",
+          "alt": "Retro Cottage pet friendly accommodation coffs harbour"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-145-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-145-150x150.jpg",
+          "alt": "Pet friendly accommodation near Coffs Harbour"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-new-2-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-new-2-150x150.jpg",
+          "alt": "Retro Cottage at Friday Creek Retreat"
+        }
+      ]
+    },
+    {
+      "id": "cottage-6",
+      "name": "Casablanca",
+      "subtitle": "Cottage 6",
+      "slug": "casablanca",
+      "capacity": "Perfect for a romantic holiday",
+      "shortDescription": "Fancy a romantic holiday to some far-flung land, but don't really want to leave Australia? Come to the Coffs Harbour hinterland and enjoy our Moroccan influenced Casablanca cottage.",
+      "longDescription": [
+        "Fancy a romantic holiday to some far-flung land, but don't really want to leave Australia? Come to the Coffs Harbour hinterland and enjoy our Moroccan influenced Casablanca cottage. Get a taste of Marrakesh without the hassle of a long distance flight.",
+        "The vibrant colours and designer highlights of this gorgeous hideaway give it a Moorish flavour, while the rolling green pastures and gum trees of the Coffs Harbour hinterland remind you that this is home.",
+        "The queen bedroom, large spa bath and open fireplace make this just the right setting for a romantic holiday à deux. Bring along a few spices and whip up a Moroccan pilaf in the fully equipped kitchen. Or just hang out on the verandah and soak in the greens and blues of our beautiful hinterland countryside.",
+        "Wander down to the beautifully landscaped pool deck, light the wood-fired oven and make yourselves a Moroccan pizza. Or explore other culinary delights and wonderful local produce available in the hinterland region.",
+        "All of our cottages are pet-friendly, so if your dog or cat needs a romantic holiday too, bring them along. There's also a double pull out bed in the living area if other humans want to join you too."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": false
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "1 double pull out sofa bed in the lounge",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace with (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-75-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-75-150x150.jpg",
+          "alt": "Casablanca Cottage Coffs harbour Hinterland Pet Friendly Accommodation"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-71-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-71-150x150.jpg",
+          "alt": "Friday Creek Retreat Boutique Cottage Accommodation"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-72-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2019/08/Friday-Creek-06062019-72-150x150.jpg",
+          "alt": "Coffs Harbour Hinterland Resort Accommodation"
+        }
+      ]
+    },
+    {
+      "id": "cottage-7",
+      "name": "Australian Country",
+      "subtitle": "Cottage 7",
+      "slug": "australian-country",
+      "capacity": "An idyllic country cottage",
+      "shortDescription": "This Australian Country Cottage is near Coffs Harbour but feels like it's a world away. The charming rustic décor and furnishings, open fireplace with a stone hearth and fully equipped country kitchen take you right out of the city.",
+      "longDescription": [
+        "This Australian Country Cottage is near Coffs Harbour but feels like it's a world away. The charming rustic décor and furnishings, open fireplace with a stone hearth and fully equipped country kitchen take you right out of the city and into an old-time Australian country home.",
+        "We've built in the feeling of yesterday, then added twenty first century comforts. So while you appreciate the little rustic touches, you can also revel in the comfort of your queen size bedroom, large bathroom and spa and kitchen complete with the latest equipment.",
+        "To really get that country feeling we recommend that you spend some time staring out at the rolling green pastures, curl up beside the stone fireplace in the winter months, or maybe whip up some scones in the country kitchen.",
+        "If you feel like venturing a bit further afield then why not explore the countryside surrounding Coffs Harbour. You'll discover wide-open spaces, stunning national parks, wild waterfalls and great cafes.",
+        "All our cottages are pet-friendly, so if your dog or cat needs a break from city life, bring them along to enjoy a bit of country. There's also a double pull out couch in the living room if you want to bring some extra humans as well."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": false
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "1 double pull out sofa bed in the lounge",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-137-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-137-150x150.jpg",
+          "alt": "Romantic getaway Coffs Harbour Cottage"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-140-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-140-150x150.jpg",
+          "alt": "Friday Creek Retreat Cottage Holiday Rental"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-139-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-139-150x150.jpg",
+          "alt": "Orara Valley country views"
+        }
+      ]
+    },
+    {
+      "id": "cottage-8",
+      "name": "Jawan-Lyrebird",
+      "subtitle": "Cottage 8",
+      "slug": "jawan-lyrebird",
+      "capacity": "Adults only romantic escape",
+      "shortDescription": "If you are looking for a relaxed, private, romantic, adults only escape then Jawan-Lyrebird is for you. The luxurious queen sized bed, large corner spa in the bathroom and stone fireplace all set the scene for connecting with your love.",
+      "longDescription": [
+        "For those who have loved our French Provincial, there may be a little disappointment but we are making some exciting changes. While Europe calls us, it's the right time to ground ourselves in our own local magnificence.",
+        "We are creating a luxury, romantic love nest like no other. If you are looking for a relaxed, private, romantic, adults only escape then Jawan-Lyrebird is for you. The luxurious queen sized bed, large corner spa in the bathroom and stone fireplace all set the scene for connecting with your love.",
+        "A short drive from Coffs means slipping out to dinner or lunch is doable. But just as luxurious is staying put and drinking champagne and cheese and watching the sun set over the mountains.",
+        "Of course cooking in the fully equipped Kitchen is always an option. Coffs Coast has an abundance of local produce to hunt out or you can explore the cafes and restaurants. If you want to stay put out here there is plenty to explore on our 100 acre farm.",
+        "And yes we do have lyrebirds. If you walk around Friday Creek you are almost sure to hear one and if you are lucky see one running of the road so drive slow!",
+        "And if you need your furry friend with you to top off the romance then don't forget we are pet-friendly."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        },
+        {
+          "type": "Sofa Bed (Double)",
+          "count": 1,
+          "extraCharge": false
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "1 double pull out sofa bed in the lounge",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-96-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-96-150x150.jpg",
+          "alt": "Dog Friendly Accommodation Coffs Harbour"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-99-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-99-150x150.jpg",
+          "alt": "Coffs Harbour hinterland accommodation cabin"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-98-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-98-150x150.jpg",
+          "alt": "Pet friendly accommodation coffs harbour"
+        }
+      ]
+    },
+    {
+      "id": "cottage-9",
+      "name": "Santa Fe",
+      "subtitle": "Cottage 9",
+      "slug": "santa-fe",
+      "capacity": "Strictly for two people",
+      "shortDescription": "We think this is quite simply the most romantic cottage in the Coffs Harbour Hinterland. This very private 1-bedroom stone cottage is a little slice of New Mexico – from the kitchen to the Kiva fireplace.",
+      "longDescription": [
+        "We think this is quite simply the most romantic cottage in the Coffs Harbour Hinterland. This very private 1-bedroom stone cottage is a little slice of New Mexico – from the kitchen to the Kiva fireplace.",
+        "Wake up to the stunning terracotta colours of the queen sized bedroom, contrasted against the vivid blues and greens outside. Enjoy a soak in the big-enough-for-two sunken spa bath, before flinging open the double doors to your secluded balcony and drinking in the panoramic hinterland views.",
+        "There are touches of Santa Fe throughout the cottage: white washed walls, bold tiles, Mexican art and pottery and Tex-Mex rugs and accents. The fully equipped kitchen lets you take the experience one step further: nachos and margeritas anyone?",
+        "Our most romantic cottage is strictly for two people – three's a crowd. But like all our cottages, Santa Fe Cottage is pet-friendly. So feel free to bring your dog or cat if that will brighten the romance.",
+        "You can stay snuggled in your Santa Fe love nest or step out and explore our 100-acre property. If you want to go further afield there a plenty of restaurants, parks and scenic drives to be explored in the Coffs Harbour hinterland."
+      ],
+      "bedrooms": [
+        {
+          "type": "Queen",
+          "count": 1
+        }
+      ],
+      "bathrooms": 1,
+      "features": [
+        "1 queen bedroom",
+        "1 bathroom with shower and spa bath",
+        "Pet friendly",
+        "Free Wifi",
+        "Reverse cycle air con",
+        "Open Veranda with hammock chair",
+        "Open log fireplace (winter months only)",
+        "Bathroom with corner spa & separate shower",
+        "Self-contained fully equipped kitchen",
+        "Quality linen & toiletries",
+        "Soft cuddly and cosy robes",
+        "TV, Blue-ray player & Bluetooth speaker",
+        "Free access to movies, music, books & games",
+        "Plunger coffee & tea",
+        "Iron and ironing board",
+        "Free parking",
+        "Breakfast basket on request",
+        "Travel cots & roll away beds on request"
+      ],
+      "notes": [
+        "There is a firewood cover charge"
+      ],
+      "images": [
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-new-1-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-new-1-150x150.jpg",
+          "alt": "Santa Fe Couples Retreat at Friday Creek Retreat"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-109-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-109-150x150.jpg",
+          "alt": "Rustic Coffs Harbour Stone Cottage"
+        },
+        {
+          "url": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-125-1024x683.jpg",
+          "thumbnail": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-125-150x150.jpg",
+          "alt": "Romantic Couples Retreat Coffs Harbour Hinterland"
+        }
+      ]
+    }
+  ]
+}

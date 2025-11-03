@@ -1,0 +1,93 @@
+{
+  "page": "facilities",
+  "title": "Facilities",
+  "subtitle": "Everything you need for a romantic getaway",
+  "intro": "Friday Creek Retreat has everything you need for a romantic getaway without ever having to leave the green pastures and crystal clear streams of our 100-acre property.",
+  "facilities": [
+    {
+      "name": "Fishing",
+      "description": "Friday Creek Retreat is set on 100 acres in a beautiful valley at Upper Orara on the New South Wales Mid North Coast. Some say that Orara is derived from Urara, which is Aboriginal for 'where Perch live.' And Perch certainly do live in the Friday Creek Retreat Lake, where they've been dodging anglers for many years! If you'd like to try your luck though, we'll provide the gear – but please remember, it's always kiss and release.",
+      "icon": "fishing",
+      "imageUrl": "https://www.fridaycreek.com/wp-content/uploads/2016/11/Jill-fishing-768x1024.jpg"
+    },
+    {
+      "name": "Cycling and Walking",
+      "description": "Quite often, our guests will borrow our bicycles and go for a ride along Friday Creek Road. They ride past our vineyard; glossy well-fed cattle and horses; and an organic egg farm. Others prefer to explore the valley on foot to enjoy the various walks available.",
+      "icon": "cycling",
+      "imageUrl": "https://www.fridaycreek.com/wp-content/uploads/2016/11/Friday-Creek_Drone_014-1024x768.jpg"
+    },
+    {
+      "name": "Pool, Poolside Barbecue, and Pizza Oven",
+      "description": "The beautiful design creates a feeling of nature's own rock pools – crystal clear, sparkling waters with all the smoothness and comfort of today's pool technology. The landscaped pools gently follow the contours of the land; providing vantage points from where you can admire the panoramic expanses of Friday Creek's rolling hills and plains. Overlooking the pools is a rustic style, covered space that houses a very popular wood fired pizza oven, gas BBQ, refrigerator, Bluetooth speakers (bring your own music), tables and chairs and a very functional kitchenette. This has been home to many family gatherings, happy Pizza Parties and small gatherings of guests and their friends.",
+      "icon": "pool",
+      "imageUrl": "https://www.fridaycreek.com/wp-content/uploads/2016/11/Friday-Creek_Drone_002-1-1024x768.jpg"
+    },
+    {
+      "name": "The gentle art of Boules/Petanque (French), Boccé (Italian for Boule) & Croquet",
+      "description": "Over the years, many guests have discovered (some have rediscovered) the simple pleasures of rolling a heavy ball across manicured lawns to come as close as possible to a small 'target ball'. We believe that the Italian version can become quite animated! But – it's all good fun. Although seemingly more sedate, the game of Croquet is pretty challenging. It requires some dexterous handling of a mallet to propel balls through hoops. And even if you get it all wrong, it's still hilarious!",
+      "icon": "games"
+    },
+    {
+      "name": "Love all for Tennis",
+      "description": "The full-size synthetic grass court has been positioned in another beautiful part of Friday Creek Retreat. It's surrounded by magnificent old gum trees and beautiful lawns, with rustic seating for those who love spectator sports. Just bring some strawberries, cream and an ice bucket with your favourite tipple.",
+      "icon": "tennis",
+      "imageUrl": "https://www.fridaycreek.com/wp-content/uploads/2016/10/Extras-55.jpg"
+    },
+    {
+      "name": "Indoor pastimes",
+      "description": "Even though the CSIRO has stated that the Coffs Harbour area has, 'the best climate around', Mother Nature can sometimes send clouds, showers and cool spells. At Friday Creek Retreat, you'll find beauty in all weather – especially when you can curl up indoors with a roaring log fire (winter months only) with a selection from our pretty comprehensive library of movies, books and music. They're all free too. We do have a cover charge for firewood.",
+      "icon": "indoor",
+      "imageUrl": "https://www.fridaycreek.com/wp-content/uploads/2016/11/IMG_2919.jpg"
+    },
+    {
+      "name": "Guest laundry and Games equipment",
+      "description": "The fully equipped laundry provides washing machine, dryers and detergent dispensers – all at no extra charge to you. Also, all games equipment is yours for the asking – free of charge.",
+      "icon": "laundry"
+    }
+  ],
+  "dining": {
+    "title": "BYO Food and Wines/Drinks of Choice",
+    "subtitle": "Because there's no corner store close to Friday Creek Retreat…",
+    "description": "We've found that most of our guests prefer to bring their own provisions for all meals (which means our kitchens are very popular!) But there are times when you might crave a pizza fresh from the pizza oven … so we suggest you bring your favourite toppings and allow us to provide you with freshly made pizza dough bases. Please give us some notice (about 4 hours or so) to prepare it freshly for you, and note that this oven cannot operate on days of total fire ban.",
+    "pizzaOven": {
+      "title": "Enjoy the poolside pizza oven",
+      "description": "Each dough base makes several small pizzas (about 8 – all perfect for the paddle and the oven) and this quantity provides more than enough for 2 adults. We also provide a tomato sauce base and fresh, aromatic herbs from our garden. Together with the toppings of your choice that you have brought along, this produces a delicious, satisfying pizza meal for $40.00. We deliver to the poolside kitchen area at a time that suits you and help you get the pizza oven fired up and give you some simple instructions on how to build a great pizza. Please note that commercially bought pizzas are not suitable for our wood fired pizza oven. Pizzas are not available on the day of your arrival at Friday Creek Retreat if your ETA is 5pm or later. (Not available on days of total fire ban).",
+      "price": 40
+    },
+    "breakfast": {
+      "title": "Breakfast – The most important meal of the day",
+      "description": "While most of our guests provide their own breakfast foods, there are times when some need our help. We can, at short notice, bake you a fresh loaf of hot bread with condiments for $15, delivered straight to your cottage at a time that suits you.",
+      "price": 15
+    }
+  },
+  "images": [
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/11/Friday-Creek_Drone_002-1-1024x768.jpg",
+      "alt": "Pool Deck | Romantic Getaway Coffs Harbour"
+    },
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/10/Extras-33-683x1024.jpg",
+      "alt": "Swimming Pool | Friday Creek Retreat | Romantic Getaway Coffs Harbour"
+    },
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/10/Extras-35.jpg",
+      "alt": "Pool Deck | Friday Creek Retreat | Romantic Getaway Coffs Harbour"
+    },
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/10/Extras-55.jpg",
+      "alt": "Tennis Court | Friday Creek Retreat | Romantic Getaway Coffs Harbour"
+    },
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/10/Extras-63.jpg",
+      "alt": "Vineyard | Friday Creek Retreat | Romantic Getaway Coffs Harbour"
+    },
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/11/Jill-fishing-768x1024.jpg",
+      "alt": "Fishing Lake | Friday Creek Retreat | Romantic Getaway Coffs Harbour"
+    },
+    {
+      "url": "https://www.fridaycreek.com/wp-content/uploads/2016/10/Extras-40.jpg",
+      "alt": "Pizza Oven | Friday Creek Retreat | Romantic Getaway Coffs Harbour"
+    }
+  ]
+}

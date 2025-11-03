@@ -1,0 +1,71 @@
+{
+  "page": "contact",
+  "title": "Contact & Location",
+  "contactDetails": {
+    "hosts": "Dianne and Paul",
+    "mobile": "0434 284 070",
+    "international": "+61 434284070",
+    "email": "info@fridaycreek.com",
+    "address": {
+      "street": "267 Fridays Creek Road",
+      "suburb": "Upper Orara",
+      "state": "NSW",
+      "postcode": "2450",
+      "country": "Australia"
+    }
+  },
+  "location": {
+    "coordinates": {
+      "lat": -30.320093,
+      "lng": 153.026349
+    },
+    "googleMapsUrl": "https://maps.google.com/maps/dir//Friday+Creek+Retreat+267+Fridays+Creek+Rd+Upper+Orara+NSW+2450/@-30.3200931,153.0263493,12z"
+  },
+  "travelInfo": {
+    "air": {
+      "title": "Air",
+      "description": "Domestic flights arrive daily at Coffs Harbour Airport from Sydney, Newcastle and Brisbane. Hire car and taxi services are available at the airport."
+    },
+    "road": {
+      "title": "Road",
+      "description": "Via the Pacific Highway to Coffs Harbour, approximately 537km from Sydney and 420 km from Brisbane. Friday Creek is 15 minutes drive west from Coffs Harbour. From the Pacific Highway turn west into West High Street (which becomes Coramba Road) and follow the Friday Creek signs. Next turn is 7 kms along into Mt Browne Road. Continue on this road for 5 kms, then turn left into South Island Loop. 1.1 kms along this road you will see the left hand turn into Fridays Creek Road. Travel this road for 2.7 km, pass our vineyard and you'll find the gate to the retreat just after the bend.",
+      "distances": {
+        "fromSydney": "537km",
+        "fromBrisbane": "420km"
+      },
+      "driveTime": "15 minutes from Coffs Harbour"
+    },
+    "rail": {
+      "title": "Rail",
+      "description": "Trains from Sydney and Brisbane arrive daily at Coffs Harbour."
+    }
+  },
+  "enquiryForm": {
+    "fields": [
+      {
+        "name": "name",
+        "label": "Your Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Your Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": false
+      },
+      {
+        "name": "message",
+        "label": "Your Message",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
+}

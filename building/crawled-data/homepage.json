@@ -1,0 +1,104 @@
+{
+  "page": "homepage",
+  "hero": {
+    "slides": [
+      {
+        "title": "Coffs Harbour's romantic secluded retreat.",
+        "image": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-114-e1571733015357.jpg",
+        "alt": "Self Contained Holiday Accommodation"
+      },
+      {
+        "title": "Coffs Harbour's hinterland retreat.",
+        "image": "https://www.fridaycreek.com/wp-content/uploads/2020/11/27-e1605755679280.jpg",
+        "alt": "Hinterland retreat"
+      },
+      {
+        "title": "Tranquil holiday accommodation",
+        "image": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-97-e1571726656182.jpg",
+        "alt": "Coffs Harbour Cabins Friday Creek Retreat"
+      },
+      {
+        "title": "Nine cottages nestled in the Orara Valley hills.",
+        "image": "https://www.fridaycreek.com/wp-content/uploads/2020/11/Friday-Creek-Retreat-3-e1606507208243.jpg",
+        "alt": "Friday Creek Retreat"
+      }
+    ],
+    "cta": {
+      "text": "Virtual Tour",
+      "link": "https://www.youtube.com/watch?v=M_QhqAvGlws&autoplay=1&rel=0&showinfo=0"
+    }
+  },
+  "welcome": {
+    "title": "Welcome to Friday Creek Retreat",
+    "description": "Tucked amongst the hinterland's rolling hills, our retreat cottages offer privacy and seclusion only 15 minutes from the coastal city of Coffs Harbour. Nine cottages, each with its own unique décor and personality, nestle amongst the trees, rolling hills and green pastures. A place to truly relax and escape the world's hustle and bustle.",
+    "features": [
+      "Fully equipped kitchens",
+      "Open fireplaces in winter",
+      "Majestic views year round",
+      "Pet friendly accommodation"
+    ],
+    "image": "https://www.fridaycreek.com/wp-content/uploads/2016/11/Friday-Creek_Drone_002-1.jpg"
+  },
+  "directBooking": {
+    "title": "Direct Bookings During Peak Times",
+    "description": "We often have more availability for direct bookings than you'll find on online travel agencies, especially during peak times such as Christmas and long weekends. To ensure you secure your preferred dates, we recommend booking directly with us.",
+    "benefits": [
+      "Best availability during peak times",
+      "Exclusive offers",
+      "Personalised service"
+    ],
+    "cta": {
+      "text": "Rates & Availability",
+      "link": "https://book-directonline.com/properties/fridaycreekredirect"
+    }
+  },
+  "featuredCottages": [
+    {
+      "id": "cottage-1",
+      "name": "The Big House",
+      "subtitle": "Cottage 1",
+      "description": "This house-size cottage is the perfect accommodation for one or more families to enjoy the beautiful Coffs Harbour hinterland. With 3 bedrooms, a sofa bed and the option to add rollaway beds, the house can comfortably sleep up to 8 people.",
+      "image": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-4-450x350.jpg",
+      "link": "/our-cottages/the-big-house"
+    },
+    {
+      "id": "cottage-2",
+      "name": "Tribal Cottage",
+      "subtitle": "Cottage 2",
+      "description": "Looking for unique accommodation for your Coffs Coast holiday? Look no further than our Tribal Cottage with its earthy mix of classic and contemporary Aboriginal art and hand selected tribal crafts and wall hangings.",
+      "image": "https://www.fridaycreek.com/wp-content/uploads/2019/07/Friday-Creek-06062019-43-450x350.jpg",
+      "link": "/our-cottages/tribal-cottage"
+    },
+    {
+      "id": "cottage-3",
+      "name": "Asian Cottage",
+      "subtitle": "Cottage 3",
+      "description": "Our Asian cottage for two, beautifully blends Asian culture with the rolling green hills of the Coffs hinterland. Your romantic 1-bedroom getaway is far away from the everyday.",
+      "image": "https://www.fridaycreek.com/wp-content/uploads/2016/09/Friday-Creek-06062019-182-450x350.jpg",
+      "link": "/our-cottages/asian-cottage"
+    }
+  ],
+  "petFriendly": {
+    "title": "Friday Creek Retreat is Pet Friendly!",
+    "cta": {
+      "text": "Find Out More",
+      "link": "/pet-friendly-accommodation"
+    }
+  },
+  "blogPosts": [
+    {
+      "title": "Make Your Special Occasion an Unforgettable Adventure Away",
+      "date": "11/03/2021",
+      "excerpt": "Here at Friday Creek Retreat our guests swoon over relaxing days and peaceful nights. We...",
+      "image": "https://www.fridaycreek.com/wp-content/uploads/2021/03/Hinterland-Coffs-Harbour-Aerial-Scenic-Flight-Precision-Helicopters-NSW-650x350.png",
+      "link": "/special-occasion"
+    },
+    {
+      "title": "Rolling into a Fresh New Year at Friday Creek Retreat",
+      "date": "30/12/2020",
+      "excerpt": "The Orara Valley is a sea of emerald green this season and thriving with life,...",
+      "image": "https://www.fridaycreek.com/wp-content/uploads/2020/12/IMG_6800-2-650x350.jpg",
+      "link": "/fresh-new-year"
+    }
+  ]
+}

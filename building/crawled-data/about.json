@@ -1,0 +1,35 @@
+{
+  "page": "about",
+  "title": "About",
+  "heading": "Nine Private Cottages in Coffs Harbour's Hinterland",
+  "content": [
+    "Only 15 minutes from the coastal city of Coffs Harbour, the nine private, pet friendly cottages of Friday Creek Retreat sit nestled amongst the shady trees, green pastures and rolling hills of the hinterland.",
+    "The cottages are part of a one hundred acre property of rolling pastures, meandering cattle, vineyards and plenty of fresh clean air. You can choose to curl up with a book on your cottage balcony, wander down to the shared luxury pool deck or venture out to explore the Coffs Harbour region, from the mountains to the sea.",
+    "Whether your stick nearby or roam further afield, your cottage will await, offering tranquillity, thoughtful creature comforts and a distinctive personality. Each private cottage is a unique destination. From rustic Australiana to the mystique of Morocco; the intrigue of old Asian cultures to the indulgence of French provincial, each cottage has its own unique décor and character which means every visit to Friday Creek Retreat can be completely different.",
+    "For those of you who won't leave home without your beloved pet, rest assured that the cottages at Friday Creek Retreat are pet friendly."
+  ],
+  "navigation": {
+    "sections": [
+      {
+        "title": "Facilities",
+        "link": "/about/facilities"
+      },
+      {
+        "title": "Facilities Gallery",
+        "link": "/about/facilities/facilities-gallery"
+      },
+      {
+        "title": "Blog",
+        "link": "/about/blog"
+      },
+      {
+        "title": "While You're Here",
+        "link": "/about/while-youre-here"
+      },
+      {
+        "title": "Reviews",
+        "link": "/about/reviews"
+      }
+    ]
+  }
+}
