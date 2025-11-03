@@ -35,7 +35,6 @@ export default function CottagesPage() {
     <>
       {/* Hero Section */}
       <Section padding="xl" background="cream" className="relative mb-16 md:mb-24 lg:mb-32">
-        <BackgroundShape variant="organic" colorStart="#9eab87" colorEnd="#667250" opacity={0.05} />
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedText
             as="h1"
@@ -53,7 +52,6 @@ export default function CottagesPage() {
 
       {/* Cottages Grid */}
       <Section padding="l" background="cream" className="relative">
-        <BackgroundShape variant="blob" colorStart="#9eab87" colorEnd="#5b6647" opacity={0.06} />
         <div ref={cardGridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {cottagesData.cottages.map((cottage) => (
             <Card
@@ -74,7 +72,6 @@ export default function CottagesPage() {
 
       {/* Features Section */}
       <Section padding="l" background="navy" className="relative">
-        <BackgroundShape variant="wave" colorStart="#05496b" colorEnd="#022B40" opacity={0.15} />
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display text-display-sm text-cream mb-2">
@@ -114,7 +111,6 @@ export default function CottagesPage() {
 
       {/* CTA Section */}
       <Section padding="m" background="olive" className="relative mt-12 md:mt-16 lg:mt-20">
-        <BackgroundShape variant="organic" colorStart="#667250" colorEnd="#535D41" opacity={0.2} />
         <div className="text-center">
           <h2 className="font-display text-display-sm text-cream mb-6">
             Ready to Book Your Perfect Cottage?
