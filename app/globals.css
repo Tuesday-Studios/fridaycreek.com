@@ -111,10 +111,9 @@
     will-change: transform;
   }
 
-  /* Homepage header is always visible, just changes background */
+  /* Homepage header starts hidden, GSAP fades it in */
   .homepage-header {
-    opacity: 1;
-    pointer-events: auto;
+    opacity: 0;
   }
 }
 

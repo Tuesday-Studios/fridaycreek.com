@@ -18,6 +18,7 @@ export default function Home() {
   const { hero, welcome, featuredCottages, directBooking } = homepageData;
   const cardGridRef = useRef<HTMLDivElement>(null);
   const welcomeImageRef = useRef<HTMLDivElement>(null);
+  const petImageRef = useRef<HTMLDivElement>(null);
 
   // Respect user's reduced motion preference
   useReducedMotion();
