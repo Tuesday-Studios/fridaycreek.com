@@ -68,7 +68,13 @@ export default function FacilitiesPage() {
       {/* Facilities Grid */}
       <Section padding="l" background="cream">
         <div className="space-y-20 md:space-y-24">
-          {facilitiesData.facilities.map((facility, index) => (
+          {/* Commented out: Boules/Petanque and Guest laundry facilities */}
+          {facilitiesData.facilities
+            .filter((facility) =>
+              facility.name !== "The gentle art of Boules/Petanque (French), Boccé (Italian for Boule) & Croquet" &&
+              facility.name !== "Guest laundry and Games equipment"
+            )
+            .map((facility, index) => (
             <div
               key={index}
               className={`facility-card flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center ${
