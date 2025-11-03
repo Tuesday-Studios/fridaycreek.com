@@ -35,7 +35,7 @@ export default function Header() {
       // Determine if scrolled past threshold
       setIsScrolled(currentScrollY > 50);
 
-      // On homepage, keep header visible once it appears
+      // On homepage, show header only when user scrolls (currentScrollY > 10)
       // On other pages, hide/show header based on scroll direction
       if (!isHomepage) {
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
@@ -45,8 +45,8 @@ export default function Header() {
           setIsVisible(true);
         }
       } else {
-        // Homepage: always keep visible (header fade-in is controlled by GSAP)
-        setIsVisible(true);
+        // Homepage: show header only when user has scrolled
+        setIsVisible(currentScrollY > 10);
       }
 
       setLastScrollY(currentScrollY);

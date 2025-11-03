@@ -5,6 +5,7 @@ import Section from "@/components/layout/Section";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import ScaleHero from "@/components/ui/ScaleHero";
+import ScrollIndicator from "@/components/ui/ScrollIndicator";
 import AnimatedText from "@/components/ui/AnimatedText";
 import WaveSeparator from "@/components/ui/WaveSeparator";
 import BackgroundShape from "@/components/ui/BackgroundShape";
@@ -54,6 +55,9 @@ export default function Home() {
         alt={hero.slides[0].alt}
         title={hero.slides[0].title}
       />
+
+      {/* Scroll Indicator Arrow - appears after zoom */}
+      <ScrollIndicator delay={2.6} />
 
       {/* Welcome Section */}
       <Section background="cream" className="py-24 md:py-32 lg:py-40 relative">
