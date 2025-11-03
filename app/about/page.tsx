@@ -36,7 +36,7 @@ export default function AboutPage() {
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* Navigation Cards */}
-      <Section padding="l" background="olive">
+      <Section padding="l" background="olive" className="mb-16 md:mb-20 lg:mb-24">
         <div className="text-center mb-12">
           <h2 className="font-display text-display-sm text-cream mb-4">
             Explore More
