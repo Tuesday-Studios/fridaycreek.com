@@ -23,24 +23,21 @@ export default function Home() {
 
   // Initialize GSAP animations
   useGSAP(() => {
-    // Homepage header fade-in after scale hero animation (at ~80% progress)
+    // Homepage header fade-in during scale hero animation
     const header = document.getElementById("main-header");
     if (header) {
+      // Wait for zoom to be 80% complete, then fade in header
       gsap.to(header, {
-        scrollTrigger: {
-          trigger: ".scale-hero-wrapper",
-          start: "top top",
-          end: "+=100vh",
-          scrub: 1,
-          onUpdate: (self) => {
-            if (self.progress > 0.8) {
-              header.classList.add("show");
-            }
-          },
+        opacity: 1,
+        duration: 0.8,
+        delay: 1.8, // After zoom animation (0.3 + 1.8 * 0.8 = ~1.74s)
+        ease: "power2.out",
+        onStart: () => {
+          header.classList.add("show");
         },
       });
 
-      // Also animate navigation links when header appears
+      // Animate navigation links when header appears
       gsap.fromTo(
         ".nav-link",
         { y: -20, opacity: 0 },
@@ -49,12 +46,8 @@ export default function Home() {
           opacity: 1,
           duration: 0.5,
           stagger: 0.1,
+          delay: 2.0, // Slightly after header starts fading in
           ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".scale-hero-wrapper",
-            start: "80% top",
-            toggleActions: "play none none none",
-          },
         }
       );
     }

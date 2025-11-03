@@ -29,42 +29,28 @@ export default function ScaleHero({
     document.body.style.overflow = "hidden";
 
     const ctx = gsap.context(() => {
-      const imageWrapper = imageWrapperRef.current;
-
       // Set initial scale value on document root
       gsap.set(document.documentElement, {
         "--scale-value": 0.27,
       });
 
-      // Unified timeline with both scale and pin
+      // Auto-play timeline (not scroll-triggered)
       const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: imageWrapper,
-          start: "top top",
-          end: "+=150vh", // Extended for pause effect
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1,
-          onEnter: () => {
-            // Unlock scroll when animation starts
+        delay: 0.3, // Small delay after page load
+        onComplete: () => {
+          // Unlock scroll after animation completes
+          setTimeout(() => {
             document.body.style.overflow = "auto";
-          },
-          onLeave: () => {
             if (onAnimationComplete) onAnimationComplete();
-          },
+          }, 500); // Brief pause before enabling scroll
         },
       });
 
-      // Animate scale value from 0.27 to 1 (66% of timeline)
+      // Animate scale value from 0.27 to 1
       tl.to(document.documentElement, {
         "--scale-value": 1,
-        ease: "none",
-        duration: 1,
-      });
-
-      // Add pause - hold at full scale (34% of timeline)
-      tl.to({}, {
-        duration: 0.5,
+        duration: 1.8, // Smooth zoom over 1.8 seconds
+        ease: "power2.inOut",
       });
     }, containerRef);
 
