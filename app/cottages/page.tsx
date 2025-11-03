@@ -9,6 +9,17 @@ import cottagesData from "../../../building/crawled-data/cottages.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, focusBlur } from "@/utils/gsapAnimations";
 import { useRef } from "react";
+import {
+  ChefHat,
+  Sparkles,
+  Wifi,
+  Wind,
+  Flame,
+  PawPrint,
+  Tv,
+  Music,
+  Car,
+} from "lucide-react";
 
 export default function CottagesPage() {
   const cardGridRef = useRef<HTMLDivElement>(null);
@@ -84,24 +95,39 @@ export default function CottagesPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Self-contained fully equipped kitchen",
-              "Quality linen & toiletries",
-              "Free Wifi",
-              "Reverse cycle air conditioning",
-              "Open log fireplace (winter months)",
-              "Pet-friendly",
-              "TV, Blue-ray & Bluetooth speaker",
-              "Free access to movies, music & books",
-              "Free parking",
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="flex items-start space-x-3 text-cream/90"
-              >
-                <span className="text-olive-light">✓</span>
-                <span>{feature}</span>
-              </div>
-            ))}
+              {
+                icon: ChefHat,
+                label: "Self-contained fully equipped kitchen",
+              },
+              { icon: Sparkles, label: "Quality linen & toiletries" },
+              { icon: Wifi, label: "Free Wifi" },
+              { icon: Wind, label: "Reverse cycle air conditioning" },
+              { icon: Flame, label: "Open log fireplace (winter months)" },
+              { icon: PawPrint, label: "Pet-friendly" },
+              { icon: Tv, label: "TV, Blue-ray & Bluetooth speaker" },
+              { icon: Music, label: "Free access to movies, music & books" },
+              { icon: Car, label: "Free parking" },
+            ].map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div
+                  key={index}
+                  className="facility-card group bg-navy-light/20 rounded-lg p-6 border border-cream/10 hover:border-cream/30 hover:bg-navy-light/30 transition-all duration-300"
+                >
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="w-16 h-16 flex items-center justify-center rounded-full bg-olive-light/20 group-hover:bg-olive-light/30 transition-colors duration-300">
+                      <Icon
+                        className="w-8 h-8 text-olive-light group-hover:scale-110 transition-transform duration-300"
+                        strokeWidth={1.5}
+                      />
+                    </div>
+                    <span className="text-cream/90 leading-relaxed">
+                      {feature.label}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </Section>
