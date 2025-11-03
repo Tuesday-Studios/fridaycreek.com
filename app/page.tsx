@@ -174,7 +174,7 @@ export default function Home() {
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* Pet Friendly CTA */}
-      <Section background="olive" className="py-20 md:py-28 lg:py-36 relative">
+      <Section background="olive" className="py-10 md:py-14 lg:py-18 relative">
         <div className="text-center cta-section">
           <h2 className="font-display text-display-sm text-cream mb-6">
             Friday Creek Retreat is Pet Friendly!
