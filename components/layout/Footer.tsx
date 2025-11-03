@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom section */}
-          <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="pt-8 flex flex-col items-center gap-4 text-center">
             <p className="text-cream/60 text-sm">
               © {new Date().getFullYear()} Friday Creek Retreat. All Rights Reserved.
             </p>
