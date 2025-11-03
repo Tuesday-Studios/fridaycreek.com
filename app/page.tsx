@@ -8,7 +8,7 @@ import ScaleHero from "@/components/ui/ScaleHero";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
 import AnimatedText from "@/components/ui/AnimatedText";
 import WaveSeparator from "@/components/ui/WaveSeparator";
-import homepageData from "../../building/crawled-data/homepage.json";
+import homepageData from "../building/crawled-data/homepage.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp, parallax, focusBlur } from "@/utils/gsapAnimations";
 import { useRef } from "react";
