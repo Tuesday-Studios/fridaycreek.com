@@ -6,6 +6,7 @@
   :root {
     --font-woodland: "Playfair Display", serif;
     --font-dm-sans: "DM Sans", sans-serif;
+    --scale-value: 0.27;
   }
 
   body {
@@ -60,6 +61,37 @@
   /* Text utilities */
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Scale Hero Animation */
+  .scale-hero-inner {
+    transform: scale(var(--scale-value));
+    border-radius: calc(20px / var(--scale-value));
+    transform-origin: center center;
+  }
+
+  @media (min-width: 1440px) {
+    .scale-hero-inner {
+      border-radius: calc(1.38889vw / var(--scale-value));
+    }
+  }
+
+  /* Counter-scale the image to maintain proper appearance */
+  .scale-hero-image-wrapper {
+    transform: scale(calc((1 - var(--scale-value)) * 0.2 / 0.73 + 1.2));
+    transform-origin: center center;
+  }
+
+  @media (max-width: 800px) {
+    .scale-hero-inner {
+      aspect-ratio: 1/1 !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .scale-hero-inner {
+      aspect-ratio: 9/16 !important;
+    }
   }
 }
 

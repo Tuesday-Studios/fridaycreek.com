@@ -4,13 +4,12 @@ import Image from "next/image";
 import Section from "@/components/layout/Section";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
-import ImageSlider from "@/components/ui/ImageSlider";
+import ScaleHero from "@/components/ui/ScaleHero";
 import AnimatedText from "@/components/ui/AnimatedText";
-import WaveSeparator from "@/components/ui/WaveSeparator";
 import BackgroundShape from "@/components/ui/BackgroundShape";
 import homepageData from "../../building/crawled-data/homepage.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
-import { heroReveal, scrollStagger, scrollFadeUp, parallax, focusBlur } from "@/utils/gsapAnimations";
+import { scrollStagger, scrollFadeUp, parallax, focusBlur } from "@/utils/gsapAnimations";
 import { useRef } from "react";
 
 export default function Home() {
@@ -23,9 +22,6 @@ export default function Home() {
 
   // Initialize GSAP animations
   useGSAP(() => {
-    // Hero animation
-    heroReveal(".hero-slider");
-
     // Card grid stagger animation
     scrollStagger(".card-item", {
       duration: 0.8,
@@ -49,19 +45,14 @@ export default function Home() {
     });
   }, []);
 
-  // Transform hero slides for ImageSlider
-  const heroSlides = hero.slides.map((slide) => ({
-    url: slide.image,
-    alt: slide.alt,
-    title: slide.title,
-  }));
-
   return (
     <>
-      {/* Hero Section with Image Slider */}
-      <section className="relative hero-slider">
-        <ImageSlider images={heroSlides} autoplay loop />
-      </section>
+      {/* Hero Section with Scale Animation */}
+      <ScaleHero
+        image={hero.slides[0].image}
+        alt={hero.slides[0].alt}
+        title={hero.slides[0].title}
+      />
 
       {/* Spacer */}
       <div className="h-20 md:h-24 lg:h-32" />
