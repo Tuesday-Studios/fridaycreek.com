@@ -1,0 +1,180 @@
+import Image from "next/image";
+import Section from "@/components/layout/Section";
+import AnimatedText from "@/components/ui/AnimatedText";
+import Button from "@/components/ui/Button";
+import facilitiesData from "../../../building/crawled-data/facilities.json";
+
+export default function FacilitiesPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <Section padding="xl" background="cream">
+        <div className="max-w-4xl mx-auto text-center">
+          <AnimatedText
+            as="h1"
+            className="font-display text-display-lg text-olive mb-4"
+          >
+            {facilitiesData.title}
+          </AnimatedText>
+          <p className="text-xl text-gray-700">
+            {facilitiesData.subtitle}
+          </p>
+        </div>
+      </Section>
+
+      {/* Spacer */}
+      <div className="h-16 md:h-20 lg:h-24" />
+
+      {/* Intro */}
+      <Section padding="m" background="cream">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            {facilitiesData.intro}
+          </p>
+        </div>
+      </Section>
+
+      {/* Spacer */}
+      <div className="h-16 md:h-20 lg:h-24" />
+
+      {/* Facilities Grid */}
+      <Section padding="l" background="cream">
+        <div className="space-y-20 md:space-y-24">
+          {facilitiesData.facilities.map((facility, index) => (
+            <div
+              key={index}
+              className={`grid md:grid-cols-2 gap-12 items-center ${
+                index % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              <div className={index % 2 === 1 ? "md:order-2" : ""}>
+                <h2 className="font-display text-display-sm text-olive mb-4">
+                  {facility.name}
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  {facility.description}
+                </p>
+              </div>
+              <div
+                className={`relative aspect-[4/3] rounded-sm overflow-hidden ${
+                  index % 2 === 1 ? "md:order-1" : ""
+                }`}
+              >
+                {/* Placeholder for facility image */}
+                <div className="w-full h-full bg-olive/10 flex items-center justify-center">
+                  <svg
+                    className="w-20 h-20 text-olive/30"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Spacer */}
+      <div className="h-20 md:h-24 lg:h-32" />
+
+      {/* Dining Section */}
+      <Section padding="l" background="navy">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-display-sm text-cream mb-4">
+              {facilitiesData.dining.title}
+            </h2>
+            <p className="text-cream/90 text-lg mb-2">
+              {facilitiesData.dining.subtitle}
+            </p>
+            <p className="text-cream/80">
+              {facilitiesData.dining.description}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Pizza Oven */}
+            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20">
+              <h3 className="font-display text-2xl text-cream mb-4">
+                {facilitiesData.dining.pizzaOven.title}
+              </h3>
+              <p className="text-cream/80 text-sm leading-relaxed mb-4">
+                {facilitiesData.dining.pizzaOven.description}
+              </p>
+              <p className="text-cream text-xl font-medium">
+                ${facilitiesData.dining.pizzaOven.price}
+              </p>
+            </div>
+
+            {/* Breakfast */}
+            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20">
+              <h3 className="font-display text-2xl text-cream mb-4">
+                {facilitiesData.dining.breakfast.title}
+              </h3>
+              <p className="text-cream/80 text-sm leading-relaxed mb-4">
+                {facilitiesData.dining.breakfast.description}
+              </p>
+              <p className="text-cream text-xl font-medium">
+                ${facilitiesData.dining.breakfast.price}
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Spacer */}
+      <div className="h-20 md:h-24 lg:h-32" />
+
+      {/* Gallery Section */}
+      <Section padding="l" background="cream">
+        <div className="text-center mb-12">
+          <h2 className="font-display text-display-sm text-olive mb-4">
+            Facility Gallery
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {facilitiesData.images.slice(0, 6).map((image, index) => (
+            <div
+              key={index}
+              className="relative aspect-square rounded-sm overflow-hidden"
+            >
+              <Image
+                src={image.url}
+                alt={image.alt}
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Spacer */}
+      <div className="h-20 md:h-24 lg:h-32" />
+
+      {/* CTA Section */}
+      <Section padding="m" background="olive">
+        <div className="text-center">
+          <h2 className="font-display text-display-sm text-cream mb-6">
+            Experience Our Facilities
+          </h2>
+          <Button
+            href="https://book-directonline.com/properties/fridaycreekredirect"
+            variant="primary"
+            external
+          >
+            Book Your Stay
+          </Button>
+        </div>
+      </Section>
+    </>
+  );
+}

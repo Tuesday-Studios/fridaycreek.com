@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-woodland: "Playfair Display", serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+  }
+
+  body {
+    @apply bg-cream text-black antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Container utilities matching reference design */
+  .container-padding {
+    @apply px-[4.166%];
+  }
+
+  /* Section spacing utilities */
+  .section-padding-xl {
+    @apply py-section-xl;
+  }
+
+  .section-padding-l {
+    @apply py-section-l;
+  }
+
+  .section-padding-m {
+    @apply py-section-m;
+  }
+
+  .section-padding-s {
+    @apply py-section-s;
+  }
+
+  .section-padding-xs {
+    @apply py-section-xs;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-4 font-sans text-sm font-medium transition-colors duration-200 rounded-xl;
+  }
+
+  .btn-primary {
+    @apply btn bg-olive text-cream hover:bg-olive-dark;
+  }
+
+  .btn-secondary {
+    @apply btn bg-cream text-olive border border-olive-light hover:bg-olive-light hover:text-cream;
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-gradient-olive {
+    background: linear-gradient(135deg, #667250 0%, #535D41 100%);
+  }
+
+  .bg-gradient-navy {
+    background: linear-gradient(135deg, #05496b 0%, #022B40 100%);
+  }
+
+  /* Performance optimizations for GSAP animations */
+  .card-item,
+  .hero-slider,
+  .welcome-image,
+  .cta-section,
+  .nav-link {
+    will-change: transform, opacity;
+  }
+
+  /* Remove will-change after animation completes */
+  @media (prefers-reduced-motion: no-preference) {
+    .card-item,
+    .hero-slider,
+    .welcome-image,
+    .cta-section,
+    .nav-link {
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+  }
+
+  /* Respect user's reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    .card-item,
+    .hero-slider,
+    .welcome-image,
+    .cta-section,
+    .nav-link {
+      will-change: auto;
+      transform: none !important;
+      opacity: 1 !important;
+    }
+  }
+}
