@@ -5,6 +5,7 @@ import AnimatedText from "@/components/ui/AnimatedText";
 import contactData from "../../../building/crawled-data/contact.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp } from "@/utils/gsapAnimations";
+import { Plane, Car, Train } from "lucide-react";
 
 export default function ContactPage() {
   const { contactDetails, travelInfo, location } = contactData;
@@ -201,7 +202,9 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Air Travel */}
             <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
-              <div className="text-5xl mb-4">✈️</div>
+              <div className="mb-4">
+                <Plane className="w-12 h-12 text-cream" strokeWidth={1.5} />
+              </div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.air.title}
               </h3>
@@ -212,7 +215,9 @@ export default function ContactPage() {
 
             {/* Road Travel */}
             <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
-              <div className="text-5xl mb-4">🚗</div>
+              <div className="mb-4">
+                <Car className="w-12 h-12 text-cream" strokeWidth={1.5} />
+              </div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.road.title}
               </h3>
@@ -227,7 +232,9 @@ export default function ContactPage() {
 
             {/* Rail Travel */}
             <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
-              <div className="text-5xl mb-4">🚂</div>
+              <div className="mb-4">
+                <Train className="w-12 h-12 text-cream" strokeWidth={1.5} />
+              </div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.rail.title}
               </h3>
