@@ -73,8 +73,8 @@ export default function ScaleHero({
               src={image}
               alt={alt}
               fill
-              className="object-cover"
-              sizes="(max-width: 800px) 100vw, (max-width: 1440px) 90vw, 80vw"
+              className="object-cover w-full h-full"
+              sizes="100vw"
               priority
             />
           </div>

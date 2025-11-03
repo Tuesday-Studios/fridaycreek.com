@@ -79,12 +79,15 @@
 
   .scale-hero-wrapper {
     width: 100%;
+    max-width: 100vw;
     overflow: hidden;
+    margin: 0 auto;
   }
 
   .scale-hero-inner {
     position: relative;
-    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
     transform: scale(var(--scale-value));
     border-radius: calc(20px / var(--scale-value));
@@ -95,18 +98,6 @@
   @media (min-width: 1440px) {
     .scale-hero-inner {
       border-radius: calc(1.38889vw / var(--scale-value));
-    }
-  }
-
-  @media (max-width: 800px) {
-    .scale-hero-inner {
-      aspect-ratio: 1/1;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .scale-hero-inner {
-      aspect-ratio: 9/16;
     }
   }
 
