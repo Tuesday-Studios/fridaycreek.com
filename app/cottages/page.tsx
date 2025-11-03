@@ -34,7 +34,7 @@ export default function CottagesPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section padding="xl" background="cream" className="relative">
+      <Section padding="xl" background="cream" className="relative mb-16 md:mb-24 lg:mb-32">
         <BackgroundShape variant="organic" colorStart="#9eab87" colorEnd="#667250" opacity={0.05} />
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedText
@@ -50,9 +50,6 @@ export default function CottagesPage() {
           </p>
         </div>
       </Section>
-
-      {/* Spacer */}
-      <div className="h-16 md:h-20 lg:h-24" />
 
       {/* Cottages Grid */}
       <Section padding="l" background="cream" className="relative">
@@ -116,7 +113,7 @@ export default function CottagesPage() {
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* CTA Section */}
-      <Section padding="m" background="olive" className="relative">
+      <Section padding="m" background="olive" className="relative mt-12 md:mt-16 lg:mt-20">
         <BackgroundShape variant="organic" colorStart="#667250" colorEnd="#535D41" opacity={0.2} />
         <div className="text-center">
           <h2 className="font-display text-display-sm text-cream mb-6">

@@ -49,12 +49,14 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section with Scale Animation */}
-      <ScaleHero
-        image={hero.slides[0].image}
-        alt={hero.slides[0].alt}
-        title={hero.slides[0].title}
-      />
+      {/* Hero Section with Scale Animation - negative margin pulls it up under header */}
+      <div className="-mt-20 lg:-mt-24">
+        <ScaleHero
+          image={hero.slides[0].image}
+          alt={hero.slides[0].alt}
+          title={hero.slides[0].title}
+        />
+      </div>
 
       {/* Scroll Indicator Arrow - appears after zoom */}
       <ScrollIndicator delay={2.6} />
@@ -63,7 +65,7 @@ export default function Home() {
       <Section background="cream" className="py-24 md:py-32 lg:py-40 relative">
         <BackgroundShape variant="organic" colorStart="#9eab87" colorEnd="#667250" opacity={0.05} />
         <WaveSeparator position="top" color="cream" />
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
             <AnimatedText
               as="h1"

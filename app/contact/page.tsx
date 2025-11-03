@@ -1,9 +1,35 @@
+"use client";
+
 import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
 import contactData from "../../../building/crawled-data/contact.json";
+import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
+import { scrollStagger, scrollFadeUp } from "@/utils/gsapAnimations";
 
 export default function ContactPage() {
   const { contactDetails, travelInfo, location } = contactData;
+
+  // Respect user's reduced motion preference
+  useReducedMotion();
+
+  // Initialize GSAP animations
+  useGSAP(() => {
+    // Travel cards stagger animation
+    scrollStagger(".travel-card", {
+      duration: 0.8,
+      stagger: 0.15,
+    });
+
+    // Contact form fade in
+    scrollFadeUp(".contact-form", {
+      duration: 0.8,
+    });
+
+    // Contact info fade in
+    scrollFadeUp(".contact-info", {
+      duration: 0.8,
+    });
+  }, []);
 
   return (
     <>
@@ -29,7 +55,7 @@ export default function ContactPage() {
       <Section padding="l" background="cream">
         <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
           {/* Contact Information */}
-          <div>
+          <div className="contact-info">
             <h2 className="font-display text-display-sm text-olive mb-6">
               Get in Touch
             </h2>
@@ -86,16 +112,16 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-sm p-8 shadow-sm">
-            <h3 className="font-display text-2xl text-olive mb-6">
+          <div className="contact-form bg-white rounded-sm p-8 md:p-10 shadow-md">
+            <h3 className="font-display text-2xl text-olive mb-8">
               Send Us a Message
             </h3>
 
-            <form className="space-y-4">
+            <form className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-navy mb-2"
                 >
                   Your Name *
                 </label>
@@ -104,14 +130,14 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-olive focus:border-transparent outline-none"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-navy mb-2"
                 >
                   Your Email *
                 </label>
@@ -120,14 +146,14 @@ export default function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-olive focus:border-transparent outline-none"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-navy mb-2"
                 >
                   Phone Number
                 </label>
@@ -135,26 +161,26 @@ export default function ContactPage() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-olive focus:border-transparent outline-none"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-navy mb-2"
                 >
                   Your Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-olive focus:border-transparent outline-none resize-none"
+                  rows={6}
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white resize-none hover:border-olive/50"
                 />
               </div>
 
-              <button type="submit" className="btn-primary w-full">
+              <button type="submit" className="btn-primary w-full mt-8">
                 Send Message
               </button>
             </form>
@@ -174,7 +200,7 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Air Travel */}
-            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20">
+            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <div className="text-5xl mb-4">✈️</div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.air.title}
@@ -185,7 +211,7 @@ export default function ContactPage() {
             </div>
 
             {/* Road Travel */}
-            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20">
+            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <div className="text-5xl mb-4">🚗</div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.road.title}
@@ -200,7 +226,7 @@ export default function ContactPage() {
             </div>
 
             {/* Rail Travel */}
-            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20">
+            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <div className="text-5xl mb-4">🚂</div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.rail.title}
@@ -214,7 +240,7 @@ export default function ContactPage() {
       </Section>
 
       {/* Spacer */}
-      <div className="h-20 md:h-24 lg:h-32" />
+      <div className="h-12 md:h-16 lg:h-20" />
 
       {/* Map Section */}
       <Section padding="l" background="cream">

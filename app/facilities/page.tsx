@@ -1,11 +1,37 @@
+"use client";
+
 import Image from "next/image";
 import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
 import Button from "@/components/ui/Button";
 import MasonryGallery from "@/components/ui/MasonryGallery";
 import facilitiesData from "../../../building/crawled-data/facilities.json";
+import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
+import { scrollStagger, scrollFadeUp } from "@/utils/gsapAnimations";
 
 export default function FacilitiesPage() {
+  // Respect user's reduced motion preference
+  useReducedMotion();
+
+  // Initialize GSAP animations
+  useGSAP(() => {
+    // Facility cards stagger animation
+    scrollStagger(".facility-card", {
+      duration: 0.8,
+      stagger: 0.2,
+    });
+
+    // Dining cards animation
+    scrollStagger(".dining-card", {
+      duration: 0.8,
+      stagger: 0.15,
+    });
+
+    // CTA sections
+    scrollFadeUp(".cta-section", {
+      duration: 0.8,
+    });
+  }, []);
   return (
     <>
       {/* Hero Section */}
@@ -44,7 +70,7 @@ export default function FacilitiesPage() {
           {facilitiesData.facilities.map((facility, index) => (
             <div
               key={index}
-              className={`grid md:grid-cols-2 gap-12 items-center ${
+              className={`facility-card flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center ${
                 index % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
@@ -100,7 +126,7 @@ export default function FacilitiesPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Pizza Oven */}
-            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20">
+            <div className="dining-card bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <h3 className="font-display text-2xl text-cream mb-4">
                 {facilitiesData.dining.pizzaOven.title}
               </h3>
@@ -113,7 +139,7 @@ export default function FacilitiesPage() {
             </div>
 
             {/* Breakfast */}
-            <div className="bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20">
+            <div className="dining-card bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <h3 className="font-display text-2xl text-cream mb-4">
                 {facilitiesData.dining.breakfast.title}
               </h3>
@@ -152,8 +178,8 @@ export default function FacilitiesPage() {
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* CTA Section */}
-      <Section padding="m" background="olive">
-        <div className="text-center">
+      <Section padding="m" background="olive" className="mt-12 md:mt-16 lg:mt-20">
+        <div className="cta-section text-center">
           <h2 className="font-display text-display-sm text-cream mb-6">
             Experience Our Facilities
           </h2>
