@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useGSAP } from "@/hooks/useGSAP";
 import { navLinkStagger } from "@/utils/gsapAnimations";
+import gsap from "gsap";
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -18,8 +19,10 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const pathname = usePathname();
   const isHomepage = pathname === "/";
+  const headerRef = useRef<HTMLElement>(null);
 
   // Animate navigation links on mount (only on non-homepage)
   useGSAP(() => {
@@ -28,9 +31,35 @@ export default function Header() {
     }
   }, [isHomepage]);
 
+  // Fade in header on homepage after zoom completes (2.1s)
+  useGSAP(() => {
+    if (isHomepage && headerRef.current && !hasAnimated) {
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 0.8,
+          delay: 2.1, // After zoom completes
+          ease: "power2.out",
+        }
+      );
+    }
+  }, [isHomepage, hasAnimated]);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+
+      // If user scrolls on homepage before animation completes, show header immediately
+      if (isHomepage && !hasAnimated && currentScrollY > 0 && headerRef.current) {
+        gsap.to(headerRef.current, {
+          opacity: 1,
+          duration: 0.3,
+          overwrite: true,
+        });
+        setHasAnimated(true);
+      }
 
       // Determine if scrolled past threshold
       setIsScrolled(currentScrollY > 50);
@@ -54,7 +83,7 @@ export default function Header() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, isHomepage]);
+  }, [lastScrollY, isHomepage, hasAnimated]);
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -80,7 +109,9 @@ export default function Header() {
   return (
     <>
       <header
+        ref={headerRef}
         id="main-header"
+        style={{ opacity: isHomepage ? 0 : 1 }}
         className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         } ${
