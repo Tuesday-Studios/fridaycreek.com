@@ -137,9 +137,9 @@ export default function CottagesPage() {
       <div className="h-12 md:h-16 lg:h-20" />
 
       {/* Cottage Map */}
-      <Section padding="l" background="navy">
+      <Section padding="l" background="cream">
         <div className="max-w-4xl mx-auto">
-          <h3 className="font-display text-display-sm text-cream mb-8 text-center">
+          <h3 className="font-display text-display-sm text-olive mb-8 text-center">
             Cottage Layout
           </h3>
           <div className="relative w-full rounded-xl overflow-hidden shadow-lg">
@@ -152,7 +152,7 @@ export default function CottagesPage() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
             />
           </div>
-          <p className="text-center text-cream/80 text-sm mt-6">
+          <p className="text-center text-gray-700 text-sm mt-6">
             Explore our 100-acre property with nine unique cottages nestled amongst the trees
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function CottagesPage() {
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* CTA Section */}
-      <Section padding="m" background="olive" className="relative mt-12 md:mt-16 lg:mt-20">
+      <Section padding="m" background="olive" className="relative mt-12 md:mt-16 lg:mt-20 mb-16 md:mb-20 lg:mb-24">
         <div className="text-center">
           <h2 className="font-display text-display-sm text-cream mb-6">
             Ready to Book Your Perfect Cottage?

@@ -133,7 +133,7 @@ export default function Home() {
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* Featured Cottages */}
-      <Section background="cream" className="py-24 md:py-32 lg:py-40 relative">
+      <Section background="cream" className="pt-32 md:pt-40 lg:pt-48 pb-24 md:pb-32 lg:pb-40 relative">
         <div>
           <div className="text-center mb-12">
             <AnimatedText
