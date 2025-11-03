@@ -246,11 +246,8 @@ export default function ContactPage() {
         </div>
       </Section>
 
-      {/* Spacer */}
-      <div className="h-12 md:h-16 lg:h-20" />
-
       {/* Map Section */}
-      <Section padding="l" background="cream">
+      <Section background="cream" className="pt-12 md:pt-16 lg:pt-20 pb-section-l">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-display text-display-sm text-olive mb-8 text-center">
             Find Us
