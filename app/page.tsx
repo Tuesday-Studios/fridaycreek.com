@@ -135,7 +135,7 @@ export default function Home() {
       {/* Featured Cottages */}
       <Section background="cream" className="py-24 md:py-32 lg:py-40 relative">
         <div>
-          <div className="text-center mb-16 md:mb-20 lg:mb-24">
+          <div className="text-center mb-12">
             <AnimatedText
               as="h2"
               className="font-display text-display-sm text-olive mb-2"
