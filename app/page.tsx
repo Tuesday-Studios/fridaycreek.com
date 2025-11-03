@@ -130,10 +130,10 @@ export default function Home() {
       </Section>
 
       {/* Spacer */}
-      <div className="h-20 md:h-24 lg:h-32" />
+      <div className="h-32 md:h-40 lg:h-48" />
 
       {/* Featured Cottages */}
-      <Section background="cream" className="pt-32 md:pt-40 lg:pt-48 pb-24 md:pb-32 lg:pb-40 relative">
+      <Section background="cream" className="py-24 md:py-32 lg:py-40 relative">
         <div>
           <div className="text-center mb-12">
             <AnimatedText
