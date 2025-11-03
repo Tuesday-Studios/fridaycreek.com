@@ -80,6 +80,25 @@ export default function CottagesPage() {
       </Section>
 
       {/* Spacer */}
+      <div className="h-16 md:h-20 lg:h-24" />
+
+      {/* CTA Section */}
+      <Section padding="m" background="cream" className="relative">
+        <div className="text-center">
+          <h2 className="font-display text-display-sm text-olive mb-6">
+            Ready to Book Your Perfect Cottage?
+          </h2>
+          <Button
+            href="https://book-directonline.com/properties/fridaycreekredirect"
+            variant="primary"
+            external
+          >
+            Check Availability
+          </Button>
+        </div>
+      </Section>
+
+      {/* Spacer */}
       <div className="h-20 md:h-24 lg:h-32" />
 
       {/* Cottage Map */}
@@ -158,24 +177,6 @@ export default function CottagesPage() {
         </div>
       </Section>
 
-      {/* Spacer */}
-      <div className="h-20 md:h-24 lg:h-32" />
-
-      {/* CTA Section */}
-      <Section padding="m" background="olive" className="relative mt-12 md:mt-16 lg:mt-20 mb-16 md:mb-20 lg:mb-24">
-        <div className="text-center">
-          <h2 className="font-display text-display-sm text-cream mb-6">
-            Ready to Book Your Perfect Cottage?
-          </h2>
-          <Button
-            href="https://book-directonline.com/properties/fridaycreekredirect"
-            variant="primary"
-            external
-          >
-            Check Availability
-          </Button>
-        </div>
-      </Section>
     </>
   );
 }
