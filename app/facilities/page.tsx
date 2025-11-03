@@ -15,22 +15,25 @@ export default function FacilitiesPage() {
 
   // Initialize GSAP animations
   useGSAP(() => {
-    // Facility cards stagger animation
-    scrollStagger(".facility-card", {
-      duration: 0.8,
-      stagger: 0.2,
-    });
+    // Delay animations to ensure DOM is ready after hydration
+    setTimeout(() => {
+      // Facility cards stagger animation
+      scrollStagger(".facility-card", {
+        duration: 0.8,
+        stagger: 0.2,
+      });
 
-    // Dining cards animation
-    scrollStagger(".dining-card", {
-      duration: 0.8,
-      stagger: 0.15,
-    });
+      // Dining cards animation
+      scrollStagger(".dining-card", {
+        duration: 0.8,
+        stagger: 0.15,
+      });
 
-    // CTA sections
-    scrollFadeUp(".cta-section", {
-      duration: 0.8,
-    });
+      // CTA sections
+      scrollFadeUp(".cta-section", {
+        duration: 0.8,
+      });
+    }, 100);
   }, []);
   return (
     <>

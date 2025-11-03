@@ -24,32 +24,35 @@ export default function Home() {
 
   // Initialize GSAP animations
   useGSAP(() => {
-    // Card grid stagger animation
-    scrollStagger(".card-item", {
-      duration: 0.8,
-      stagger: 0.15,
-    });
+    // Delay animations to ensure DOM is ready after hydration
+    setTimeout(() => {
+      // Card grid stagger animation
+      scrollStagger(".card-item", {
+        duration: 0.8,
+        stagger: 0.15,
+      });
 
-    // Focus blur effect on card grid
-    if (cardGridRef.current) {
-      const cleanup = focusBlur(cardGridRef.current, ".card-item");
-      return () => cleanup();
-    }
+      // Focus blur effect on card grid
+      if (cardGridRef.current) {
+        const cleanup = focusBlur(cardGridRef.current, ".card-item");
+        return () => cleanup();
+      }
 
-    // Welcome section image with parallax
-    if (welcomeImageRef.current) {
-      parallax(welcomeImageRef.current, { speed: -15 });
-    }
+      // Welcome section image with parallax
+      if (welcomeImageRef.current) {
+        parallax(welcomeImageRef.current, { speed: -15 });
+      }
 
-    // Pet section image with parallax
-    if (petImageRef.current) {
-      parallax(petImageRef.current, { speed: -15 });
-    }
+      // Pet section image with parallax
+      if (petImageRef.current) {
+        parallax(petImageRef.current, { speed: -15 });
+      }
 
-    // CTA sections
-    scrollFadeUp(".cta-section", {
-      duration: 0.8,
-    });
+      // CTA sections
+      scrollFadeUp(".cta-section", {
+        duration: 0.8,
+      });
+    }, 100);
   }, []);
 
   return (

@@ -29,17 +29,20 @@ export default function CottagesPage() {
 
   // Initialize GSAP animations
   useGSAP(() => {
-    // Card grid stagger animation
-    scrollStagger(".card-item", {
-      duration: 0.8,
-      stagger: 0.1,
-    });
+    // Delay animations to ensure DOM is ready after hydration
+    setTimeout(() => {
+      // Card grid stagger animation
+      scrollStagger(".card-item", {
+        duration: 0.8,
+        stagger: 0.1,
+      });
 
-    // Focus blur effect on card grid
-    if (cardGridRef.current) {
-      const cleanup = focusBlur(cardGridRef.current, ".card-item");
-      return () => cleanup();
-    }
+      // Focus blur effect on card grid
+      if (cardGridRef.current) {
+        const cleanup = focusBlur(cardGridRef.current, ".card-item");
+        return () => cleanup();
+      }
+    }, 100);
   }, []);
 
   return (

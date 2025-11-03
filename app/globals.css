@@ -146,7 +146,12 @@
 
   /* Fallback visibility - ensure content visible if GSAP doesn't fire */
   .contact-form,
-  .contact-info {
+  .contact-info,
+  .cta-section,
+  .card-item,
+  .facility-card,
+  .dining-card,
+  .travel-card {
     opacity: 1 !important;
     visibility: visible !important;
   }
