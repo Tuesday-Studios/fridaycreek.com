@@ -20,16 +20,6 @@ export default function ContactPage() {
       duration: 0.8,
       stagger: 0.15,
     });
-
-    // Contact form fade in
-    scrollFadeUp(".contact-form", {
-      duration: 0.8,
-    });
-
-    // Contact info fade in
-    scrollFadeUp(".contact-info", {
-      duration: 0.8,
-    });
   }, []);
 
   return (
