@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
-import Button from "@/components/ui/Button";
 import MasonryGallery from "@/components/ui/MasonryGallery";
 import facilitiesData from "../../../building/crawled-data/facilities.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";

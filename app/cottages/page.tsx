@@ -4,7 +4,6 @@ import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
-import BackgroundShape from "@/components/ui/BackgroundShape";
 import Image from "next/image";
 import cottagesData from "../../../building/crawled-data/cottages.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";

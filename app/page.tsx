@@ -8,7 +8,6 @@ import ScaleHero from "@/components/ui/ScaleHero";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
 import AnimatedText from "@/components/ui/AnimatedText";
 import WaveSeparator from "@/components/ui/WaveSeparator";
-import BackgroundShape from "@/components/ui/BackgroundShape";
 import homepageData from "../../building/crawled-data/homepage.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp, parallax, focusBlur } from "@/utils/gsapAnimations";
@@ -201,7 +200,7 @@ export default function Home() {
               We understand that pets are part of the family. At Friday Creek Retreat, your furry companions are welcome to join you on your hinterland escape.
             </p>
             <p className="text-cream/90 text-lg mb-6 leading-relaxed">
-              All nine cottages welcome dogs and cats. Your pets can stay inside with you and explore our 100-acre property (on leash). Nearby, you'll find pet-friendly beaches and the famous Maggie's Dog Cafe—the only indoor dog cafe in Australia!
+              All nine cottages welcome dogs and cats. Your pets can stay inside with you and explore our 100-acre property (on leash). Nearby, you&apos;ll find pet-friendly beaches and the famous Maggie&apos;s Dog Cafe—the only indoor dog cafe in Australia!
             </p>
             <p className="text-cream/80 text-base mb-8">
               Pre-approval required. Pet policy applies. Cover charge $40 per booking.
