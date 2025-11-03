@@ -35,11 +35,17 @@ export default function Header() {
       // Determine if scrolled past threshold
       setIsScrolled(currentScrollY > 50);
 
-      // Hide/show header based on scroll direction
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-        setIsMobileMenuOpen(false); // Close mobile menu on scroll down
+      // On homepage, keep header visible once it appears
+      // On other pages, hide/show header based on scroll direction
+      if (!isHomepage) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          setIsVisible(false);
+          setIsMobileMenuOpen(false); // Close mobile menu on scroll down
+        } else {
+          setIsVisible(true);
+        }
       } else {
+        // Homepage: always keep visible (header fade-in is controlled by GSAP)
         setIsVisible(true);
       }
 
@@ -48,7 +54,7 @@ export default function Header() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, isHomepage]);
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {

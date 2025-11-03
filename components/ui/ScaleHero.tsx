@@ -25,6 +25,9 @@ export default function ScaleHero({
   useEffect(() => {
     if (!containerRef.current || !imageWrapperRef.current) return;
 
+    // Lock scroll on page load
+    document.body.style.overflow = "hidden";
+
     const ctx = gsap.context(() => {
       const imageWrapper = imageWrapperRef.current;
 
@@ -42,6 +45,10 @@ export default function ScaleHero({
           scrub: 1,
           pin: true,
           anticipatePin: 1,
+          onEnter: () => {
+            // Unlock scroll when animation starts
+            document.body.style.overflow = "auto";
+          },
           onLeave: () => {
             if (onAnimationComplete) onAnimationComplete();
           },
@@ -55,7 +62,11 @@ export default function ScaleHero({
       });
     }, containerRef);
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      // Ensure scroll is unlocked on cleanup
+      document.body.style.overflow = "auto";
+    };
   }, [onAnimationComplete]);
 
   return (
