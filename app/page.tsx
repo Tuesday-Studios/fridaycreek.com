@@ -173,16 +173,38 @@ export default function Home() {
       {/* Spacer */}
       <div className="h-20 md:h-24 lg:h-32" />
 
-      {/* Pet Friendly CTA */}
-      <Section background="olive" className="py-10 md:py-14 lg:py-18 relative mb-16 md:mb-20 lg:mb-24">
-        <div className="text-center cta-section">
-          <h2 className="font-display text-display-sm text-cream mb-6">
-            Friday Creek Retreat is Pet Friendly!
-          </h2>
-          <Button href="/pet-friendly" variant="secondary">
-            Find Out More
-          </Button>
+      {/* Pet Friendly Section */}
+      <Section background="olive" className="py-24 md:py-32 lg:py-40 relative">
+        <WaveSeparator position="top" color="olive" />
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div className="relative aspect-square rounded-xl overflow-hidden">
+            <Image
+              src="https://www.fridaycreek.com/wp-content/uploads/2016/11/Misty-by-Jessie-1024x1024.jpg"
+              alt="Pet Friendly Accommodation at Friday Creek Retreat"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+          <div className="cta-section">
+            <h2 className="font-display text-display-md text-cream mb-6">
+              Your Pets Are Family Too
+            </h2>
+            <p className="text-cream/90 text-lg mb-6 leading-relaxed">
+              We understand that pets are part of the family. At Friday Creek Retreat, your furry companions are welcome to join you on your hinterland escape.
+            </p>
+            <p className="text-cream/90 text-lg mb-6 leading-relaxed">
+              All nine cottages welcome dogs and cats. Your pets can stay inside with you and explore our 100-acre property (on leash). Nearby, you'll find pet-friendly beaches and the famous Maggie's Dog Cafe—the only indoor dog cafe in Australia!
+            </p>
+            <p className="text-cream/80 text-base mb-8">
+              Pre-approval required. Pet policy applies. Cover charge $40 per booking.
+            </p>
+            <Button href="/pet-friendly" variant="secondary">
+              View Pet Policy
+            </Button>
+          </div>
         </div>
+        <WaveSeparator position="bottom" color="olive" flip />
       </Section>
     </>
   );
