@@ -82,6 +82,31 @@ export default function CottagesPage() {
       {/* Spacer */}
       <div className="h-20 md:h-24 lg:h-32" />
 
+      {/* Cottage Map */}
+      <Section padding="l" background="cream">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="font-display text-display-sm text-olive mb-8 text-center">
+            Cottage Layout
+          </h3>
+          <div className="relative w-full rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="https://www.fridaycreek.com/wp-content/uploads/2019/09/Map-from-photo-1.jpg"
+              alt="Friday Creek Retreat Cottage Map"
+              width={1200}
+              height={800}
+              className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+            />
+          </div>
+          <p className="text-center text-gray-700 text-sm mt-6">
+            Explore our 100-acre property with nine unique cottages nestled amongst the trees
+          </p>
+        </div>
+      </Section>
+
+      {/* Spacer */}
+      <div className="h-20 md:h-24 lg:h-32" />
+
       {/* Features Section */}
       <Section padding="l" background="navy" className="relative">
         <div className="max-w-5xl mx-auto">
@@ -130,31 +155,6 @@ export default function CottagesPage() {
               );
             })}
           </div>
-        </div>
-      </Section>
-
-      {/* Spacer */}
-      <div className="h-12 md:h-16 lg:h-20" />
-
-      {/* Cottage Map */}
-      <Section padding="l" background="cream">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="font-display text-display-sm text-olive mb-8 text-center">
-            Cottage Layout
-          </h3>
-          <div className="relative w-full rounded-xl overflow-hidden shadow-lg">
-            <Image
-              src="https://www.fridaycreek.com/wp-content/uploads/2019/09/Map-from-photo-1.jpg"
-              alt="Friday Creek Retreat Cottage Map"
-              width={1200}
-              height={800}
-              className="w-full h-auto"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-            />
-          </div>
-          <p className="text-center text-gray-700 text-sm mt-6">
-            Explore our 100-acre property with nine unique cottages nestled amongst the trees
-          </p>
         </div>
       </Section>
 
