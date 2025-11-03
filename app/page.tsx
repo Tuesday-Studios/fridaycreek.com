@@ -10,7 +10,7 @@ import AnimatedText from "@/components/ui/AnimatedText";
 import WaveSeparator from "@/components/ui/WaveSeparator";
 import BackgroundShape from "@/components/ui/BackgroundShape";
 import homepageData from "../../building/crawled-data/homepage.json";
-import { useGSAP, useReducedMotion, gsap } from "@/hooks/useGSAP";
+import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp, parallax, focusBlur } from "@/utils/gsapAnimations";
 import { useRef } from "react";
 
