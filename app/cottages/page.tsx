@@ -46,7 +46,7 @@ export default function CottagesPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section padding="xl" background="cream" className="relative mb-16 md:mb-24 lg:mb-32">
+      <Section padding="xl" background="cream" className="relative mb-8 md:mb-12 lg:mb-16">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedText
             as="h1"
