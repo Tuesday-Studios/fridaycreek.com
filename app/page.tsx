@@ -134,6 +134,7 @@ export default function Home() {
 
       {/* Featured Cottages */}
       <Section background="cream" className="py-24 md:py-32 lg:py-40 relative">
+        <WaveSeparator position="top" color="cream" />
         <div>
           <div className="text-center mb-12">
             <AnimatedText
