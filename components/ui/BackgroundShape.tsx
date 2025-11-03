@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useId } from "react";
 import { gsap } from "@/hooks/useGSAP";
 
 interface BackgroundShapeProps {
@@ -20,6 +20,7 @@ export default function BackgroundShape({
 }: BackgroundShapeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const gradientRef = useRef<SVGLinearGradientElement>(null);
+  const gradientId = useId();
 
   useEffect(() => {
     if (!containerRef.current || !gradientRef.current) return;
@@ -69,7 +70,7 @@ export default function BackgroundShape({
         <defs>
           <linearGradient
             ref={gradientRef}
-            id={`bgShapeGradient-${Math.random()}`}
+            id={gradientId}
             x1="0%"
             y1="0%"
             x2="0%"
@@ -81,7 +82,7 @@ export default function BackgroundShape({
         </defs>
         <path
           d={getPath()}
-          fill={`url(#bgShapeGradient-${Math.random()})`}
+          fill={`url(#${gradientId})`}
           className="shape-path"
         />
       </svg>
