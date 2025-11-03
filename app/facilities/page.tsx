@@ -8,6 +8,7 @@ import MasonryGallery from "@/components/ui/MasonryGallery";
 import facilitiesData from "../../../building/crawled-data/facilities.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp } from "@/utils/gsapAnimations";
+import { Pizza, Coffee } from "lucide-react";
 
 export default function FacilitiesPage() {
   // Respect user's reduced motion preference
@@ -83,7 +84,7 @@ export default function FacilitiesPage() {
                 </p>
               </div>
               <div
-                className={`relative aspect-[4/3] rounded-sm overflow-hidden ${
+                className={`relative aspect-[4/3] rounded-xl overflow-hidden shadow-md ${
                   index % 2 === 1 ? "md:order-1" : ""
                 }`}
               >
@@ -126,28 +127,42 @@ export default function FacilitiesPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Pizza Oven */}
-            <div className="dining-card bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
-              <h3 className="font-display text-2xl text-cream mb-4">
+            <div className="dining-card group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border-2 border-cream/30 hover:border-cream/50 hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl relative overflow-hidden">
+              {/* Pricing Badge */}
+              <div className="absolute top-6 right-6 bg-olive-light text-white px-4 py-2 rounded-full text-xl font-bold shadow-lg">
+                ${facilitiesData.dining.pizzaOven.price}
+              </div>
+
+              {/* Icon */}
+              <div className="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-cream/20 group-hover:bg-cream/30 transition-colors">
+                <Pizza className="w-12 h-12 text-cream" strokeWidth={1.5} />
+              </div>
+
+              <h3 className="font-display text-3xl text-cream mb-4 pr-20">
                 {facilitiesData.dining.pizzaOven.title}
               </h3>
-              <p className="text-cream/80 text-sm leading-relaxed mb-4">
+              <p className="text-cream/90 text-base leading-relaxed">
                 {facilitiesData.dining.pizzaOven.description}
-              </p>
-              <p className="text-cream text-xl font-medium">
-                ${facilitiesData.dining.pizzaOven.price}
               </p>
             </div>
 
             {/* Breakfast */}
-            <div className="dining-card bg-cream/10 backdrop-blur-sm rounded-sm p-8 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
-              <h3 className="font-display text-2xl text-cream mb-4">
+            <div className="dining-card group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border-2 border-cream/30 hover:border-cream/50 hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl relative overflow-hidden">
+              {/* Pricing Badge */}
+              <div className="absolute top-6 right-6 bg-olive-light text-white px-4 py-2 rounded-full text-xl font-bold shadow-lg">
+                ${facilitiesData.dining.breakfast.price}
+              </div>
+
+              {/* Icon */}
+              <div className="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-cream/20 group-hover:bg-cream/30 transition-colors">
+                <Coffee className="w-12 h-12 text-cream" strokeWidth={1.5} />
+              </div>
+
+              <h3 className="font-display text-3xl text-cream mb-4 pr-20">
                 {facilitiesData.dining.breakfast.title}
               </h3>
-              <p className="text-cream/80 text-sm leading-relaxed mb-4">
+              <p className="text-cream/90 text-base leading-relaxed">
                 {facilitiesData.dining.breakfast.description}
-              </p>
-              <p className="text-cream text-xl font-medium">
-                ${facilitiesData.dining.breakfast.price}
               </p>
             </div>
           </div>
