@@ -112,7 +112,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="contact-form bg-white rounded-sm p-8 md:p-10 shadow-md">
+          <div className="contact-form bg-white rounded-xl p-8 md:p-10 shadow-md">
             <h3 className="font-display text-2xl text-olive mb-8">
               Send Us a Message
             </h3>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-lg focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
                 />
               </div>
 
@@ -146,7 +146,7 @@ export default function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-lg focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
                 />
               </div>
 
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-lg focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white hover:border-olive/50"
                 />
               </div>
 
@@ -176,7 +176,7 @@ export default function ContactPage() {
                   id="message"
                   name="message"
                   rows={6}
-                  className="w-full px-4 py-3 border-2 border-cream-border rounded-sm focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white resize-none hover:border-olive/50"
+                  className="w-full px-4 py-3 border-2 border-cream-border rounded-lg focus:border-olive focus:ring-2 focus:ring-olive/20 outline-none transition-all duration-200 bg-white resize-none hover:border-olive/50"
                 />
               </div>
 
@@ -200,7 +200,7 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Air Travel */}
-            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
+            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <div className="text-5xl mb-4">✈️</div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.air.title}
@@ -211,7 +211,7 @@ export default function ContactPage() {
             </div>
 
             {/* Road Travel */}
-            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
+            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <div className="text-5xl mb-4">🚗</div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.road.title}
@@ -226,7 +226,7 @@ export default function ContactPage() {
             </div>
 
             {/* Rail Travel */}
-            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-sm p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
+            <div className="travel-card bg-cream/10 backdrop-blur-sm rounded-xl p-6 border border-cream/20 hover:bg-cream/15 transition-colors duration-300">
               <div className="text-5xl mb-4">🚂</div>
               <h3 className="font-display text-xl text-cream mb-3">
                 {travelInfo.rail.title}
