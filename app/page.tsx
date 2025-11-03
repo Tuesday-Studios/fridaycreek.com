@@ -210,7 +210,6 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <WaveSeparator position="bottom" color="olive" flip />
       </Section>
     </>
   );
