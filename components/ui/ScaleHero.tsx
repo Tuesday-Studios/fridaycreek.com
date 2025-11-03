@@ -9,6 +9,7 @@ interface ScaleHeroProps {
   alt: string;
   title?: string;
   className?: string;
+  onAnimationComplete?: () => void;
 }
 
 export default function ScaleHero({
@@ -16,65 +17,55 @@ export default function ScaleHero({
   alt,
   title,
   className = "",
+  onAnimationComplete,
 }: ScaleHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageWrapperRef = useRef<HTMLDivElement>(null);
-  const imageInnerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!containerRef.current || !imageWrapperRef.current || !imageInnerRef.current) return;
+    if (!containerRef.current || !imageWrapperRef.current) return;
 
     const ctx = gsap.context(() => {
       const imageWrapper = imageWrapperRef.current;
-      const imageInner = imageInnerRef.current;
-      const imageHeight = imageWrapper?.offsetHeight || 800;
 
       // Set initial scale value
       gsap.set(":root", {
         "--scale-value": 0.27,
       });
 
-      // Animation 1: Scale CSS variable from 0.27 to 1
-      gsap.to(":root", {
-        "--scale-value": 1,
+      // Unified timeline with both scale and pin
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: imageWrapper,
-          start: "center 40%",
-          end: `+=${imageHeight}`,
+          start: "top top",
+          end: "+=100vh",
           scrub: 1,
+          pin: true,
+          anticipatePin: 1,
+          onLeave: () => {
+            if (onAnimationComplete) onAnimationComplete();
+          },
         },
       });
 
-      // Animation 2: Pin the image while scaling
-      gsap.to(imageWrapper, {
-        scrollTrigger: {
-          trigger: imageWrapper,
-          start: "center center",
-          end: `+=${imageHeight}`,
-          scrub: 1,
-          pin: true,
-        },
+      // Animate scale value from 0.27 to 1
+      tl.to(":root", {
+        "--scale-value": 1,
+        ease: "none",
       });
     }, containerRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [onAnimationComplete]);
 
   return (
-    <div ref={containerRef} className={`relative ${className}`}>
+    <div ref={containerRef} className={`scale-hero-container ${className}`}>
       <div
         ref={imageWrapperRef}
-        className="scale-hero-wrapper mx-auto overflow-hidden w-full"
-        style={{ marginTop: "-10%", marginBottom: "80px" }}
+        className="scale-hero-wrapper"
       >
-        <div
-          ref={imageInnerRef}
-          className="scale-hero-inner overflow-hidden relative"
-          style={{
-            aspectRatio: "16/9",
-          }}
-        >
-          <div className="scale-hero-image-wrapper relative w-full h-full">
+        <div className="scale-hero-inner">
+          <div className="scale-hero-image-wrapper">
             <Image
               src={image}
               alt={alt}

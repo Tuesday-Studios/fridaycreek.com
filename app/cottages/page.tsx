@@ -4,7 +4,6 @@ import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
-import WaveSeparator from "@/components/ui/WaveSeparator";
 import BackgroundShape from "@/components/ui/BackgroundShape";
 import cottagesData from "../../../building/crawled-data/cottages.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
@@ -40,7 +39,7 @@ export default function CottagesPage() {
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedText
             as="h1"
-            className="font-display text-display-lg text-olive mb-6"
+            className="font-display text-display-lg text-olive mb-4"
           >
             Our Cottages
           </AnimatedText>
@@ -50,7 +49,6 @@ export default function CottagesPage() {
             pastures of the Coffs Harbour hinterland.
           </p>
         </div>
-        <WaveSeparator position="bottom" color="cream" flip />
       </Section>
 
       {/* Spacer */}
@@ -59,7 +57,6 @@ export default function CottagesPage() {
       {/* Cottages Grid */}
       <Section padding="l" background="cream" className="relative">
         <BackgroundShape variant="blob" colorStart="#9eab87" colorEnd="#5b6647" opacity={0.06} />
-        <WaveSeparator position="top" color="cream" />
         <div ref={cardGridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {cottagesData.cottages.map((cottage) => (
             <Card
@@ -73,7 +70,6 @@ export default function CottagesPage() {
             />
           ))}
         </div>
-        <WaveSeparator position="bottom" color="cream" flip />
       </Section>
 
       {/* Spacer */}
@@ -82,10 +78,9 @@ export default function CottagesPage() {
       {/* Features Section */}
       <Section padding="l" background="navy" className="relative">
         <BackgroundShape variant="wave" colorStart="#05496b" colorEnd="#022B40" opacity={0.15} />
-        <WaveSeparator position="top" color="navy" />
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-display text-display-sm text-cream mb-4">
+            <h2 className="font-display text-display-sm text-cream mb-2">
               What&apos;s Included
             </h2>
             <p className="text-cream/90 text-lg">
@@ -109,23 +104,12 @@ export default function CottagesPage() {
                 key={index}
                 className="flex items-start space-x-3 text-cream/90"
               >
-                <svg
-                  className="w-6 h-6 text-olive-light flex-shrink-0 mt-0.5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <span className="text-olive-light">✓</span>
                 <span>{feature}</span>
               </div>
             ))}
           </div>
         </div>
-        <WaveSeparator position="bottom" color="navy" flip />
       </Section>
 
       {/* Spacer */}
@@ -134,7 +118,6 @@ export default function CottagesPage() {
       {/* CTA Section */}
       <Section padding="m" background="olive" className="relative">
         <BackgroundShape variant="organic" colorStart="#667250" colorEnd="#535D41" opacity={0.2} />
-        <WaveSeparator position="top" color="olive" />
         <div className="text-center">
           <h2 className="font-display text-display-sm text-cream mb-6">
             Ready to Book Your Perfect Cottage?

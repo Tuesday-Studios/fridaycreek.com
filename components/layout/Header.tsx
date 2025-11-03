@@ -19,11 +19,14 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
+  const isHomepage = pathname === "/";
 
-  // Animate navigation links on mount
+  // Animate navigation links on mount (only on non-homepage)
   useGSAP(() => {
-    navLinkStagger(".nav-link");
-  }, []);
+    if (!isHomepage) {
+      navLinkStagger(".nav-link");
+    }
+  }, [isHomepage]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,9 +74,12 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
+        id="main-header"
+        className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
-        } ${isScrolled ? "bg-cream border-b border-cream-border" : "bg-cream"}`}
+        } ${isScrolled ? "bg-cream border-b border-cream-border" : "bg-cream"} ${
+          isHomepage ? "homepage-header" : ""
+        }`}
       >
         <div className="container-padding">
           <nav className="flex items-center justify-between h-20 lg:h-24">

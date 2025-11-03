@@ -82,7 +82,7 @@ export default function BrushText({
   }, [triggerOnScroll, delay]);
 
   return (
-    <Tag ref={containerRef as any} className={`relative overflow-hidden ${className}`}>
+    <Tag ref={containerRef as React.RefObject<HTMLHeadingElement>} className={`relative overflow-hidden ${className}`}>
       {/* Original text (comes from left) */}
       <div ref={originalRef} className="relative">
         {children}

@@ -109,7 +109,7 @@ export const staggerFadeUp = (
  */
 export const scrollFadeUp = (
   element: gsap.TweenTarget,
-  config: AnimationConfig & { trigger?: string } = {}
+  config: AnimationConfig & { trigger?: gsap.DOMTarget } = {}
 ) => {
   const { duration = 0.8, ease = "power2.out", trigger } = config;
 
@@ -123,7 +123,7 @@ export const scrollFadeUp = (
       ease,
       force3D: true,
       scrollTrigger: {
-        trigger: trigger || element,
+        trigger: trigger || (element as gsap.DOMTarget),
         start: "top 80%",
         end: "top 20%",
         toggleActions: "play none none none",
@@ -137,7 +137,7 @@ export const scrollFadeUp = (
  */
 export const scrollStagger = (
   elements: gsap.TweenTarget,
-  config: AnimationConfig & { trigger?: string } = {}
+  config: AnimationConfig & { trigger?: gsap.DOMTarget } = {}
 ) => {
   const { duration = 0.8, ease = "power2.out", stagger = 0.1, trigger } = config;
 
@@ -153,7 +153,7 @@ export const scrollStagger = (
       stagger,
       force3D: true,
       scrollTrigger: {
-        trigger: trigger || elements,
+        trigger: trigger || (elements as gsap.DOMTarget),
         start: "top 85%",
         end: "top 20%",
         toggleActions: "play none none none",
@@ -308,12 +308,12 @@ export const parallax = (
   return gsap.to(element, {
     yPercent: speed,
     ease: "none",
+    force3D: true,
     scrollTrigger: {
-      trigger: element,
+      trigger: element as gsap.DOMTarget,
       start: "top bottom",
       end: "bottom top",
       scrub: 0.1,
-      force3D: true,
     },
   });
 };
@@ -340,7 +340,7 @@ export const organicFadeScale = (
       ease: "expo.out",
       force3D: true,
       scrollTrigger: {
-        trigger: element,
+        trigger: element as gsap.DOMTarget,
         start: "top bottom-=20%",
         toggleActions: "play none none none",
       },
@@ -410,7 +410,7 @@ export const imageScalePin = (
 
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: container,
+      trigger: container as gsap.DOMTarget,
       start: "top top",
       end: "+=100%",
       scrub: 1,
@@ -420,7 +420,7 @@ export const imageScalePin = (
 
   tl.fromTo(
     image,
-    { scale: startScale },
+    { scale: startScale, force3D: true },
     {
       scale: 1,
       duration,
