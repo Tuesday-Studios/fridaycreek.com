@@ -41,7 +41,7 @@ export default function ScaleHero({
         scrollTrigger: {
           trigger: imageWrapper,
           start: "top top",
-          end: "+=100vh",
+          end: "+=150vh", // Extended for pause effect
           scrub: 1,
           pin: true,
           anticipatePin: 1,
@@ -55,10 +55,16 @@ export default function ScaleHero({
         },
       });
 
-      // Animate scale value from 0.27 to 1
+      // Animate scale value from 0.27 to 1 (66% of timeline)
       tl.to(document.documentElement, {
         "--scale-value": 1,
         ease: "none",
+        duration: 1,
+      });
+
+      // Add pause - hold at full scale (34% of timeline)
+      tl.to({}, {
+        duration: 0.5,
       });
     }, containerRef);
 
