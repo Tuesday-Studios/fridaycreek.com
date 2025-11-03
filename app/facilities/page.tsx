@@ -2,6 +2,7 @@ import Image from "next/image";
 import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
 import Button from "@/components/ui/Button";
+import MasonryGallery from "@/components/ui/MasonryGallery";
 import facilitiesData from "../../../building/crawled-data/facilities.json";
 
 export default function FacilitiesPage() {
@@ -60,10 +61,19 @@ export default function FacilitiesPage() {
                   index % 2 === 1 ? "md:order-1" : ""
                 }`}
               >
-                {/* Placeholder for facility image */}
-                <div className="w-full h-full bg-olive/10 flex items-center justify-center">
-                  <div className="text-6xl text-olive/30">🏞️</div>
-                </div>
+                {"imageUrl" in facility && facility.imageUrl ? (
+                  <Image
+                    src={facility.imageUrl}
+                    alt={facility.name}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-olive/10 flex items-center justify-center">
+                    <div className="text-6xl text-olive/30">🏞️</div>
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -127,23 +137,14 @@ export default function FacilitiesPage() {
           <h2 className="font-display text-display-sm text-olive mb-4">
             Facility Gallery
           </h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
+            Explore our stunning facilities and natural surroundings. Click any
+            image to view in full size.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {facilitiesData.images.slice(0, 6).map((image, index) => (
-            <div
-              key={index}
-              className="relative aspect-square rounded-sm overflow-hidden"
-            >
-              <Image
-                src={image.url}
-                alt={image.alt}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 768px) 50vw, 33vw"
-              />
-            </div>
-          ))}
+        <div className="max-w-7xl mx-auto">
+          <MasonryGallery />
         </div>
       </Section>
 

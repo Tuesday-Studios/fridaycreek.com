@@ -28,8 +28,8 @@ export default function ScaleHero({
     const ctx = gsap.context(() => {
       const imageWrapper = imageWrapperRef.current;
 
-      // Set initial scale value
-      gsap.set(":root", {
+      // Set initial scale value on document root
+      gsap.set(document.documentElement, {
         "--scale-value": 0.27,
       });
 
@@ -49,7 +49,7 @@ export default function ScaleHero({
       });
 
       // Animate scale value from 0.27 to 1
-      tl.to(":root", {
+      tl.to(document.documentElement, {
         "--scale-value": 1,
         ease: "none",
       });
@@ -71,7 +71,7 @@ export default function ScaleHero({
               alt={alt}
               fill
               className="object-cover"
-              sizes="100vw"
+              sizes="(max-width: 800px) 100vw, (max-width: 1440px) 90vw, 80vw"
               priority
             />
           </div>
