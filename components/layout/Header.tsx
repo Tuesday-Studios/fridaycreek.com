@@ -8,7 +8,7 @@ import { navLinkStagger } from "@/utils/gsapAnimations";
 import gsap from "gsap";
 
 const navigation = [
-  { name: "About", href: "/about" },
+  // { name: "About", href: "/about" }, // Temporarily removed
   { name: "Cottages", href: "/cottages" },
   { name: "Facilities", href: "/facilities" },
   { name: "Contact", href: "/contact" },

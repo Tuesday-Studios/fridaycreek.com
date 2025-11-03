@@ -195,24 +195,6 @@ export default function FacilitiesPage() {
         </div>
       </Section>
 
-      {/* Spacer */}
-      <div className="h-20 md:h-24 lg:h-32" />
-
-      {/* CTA Section */}
-      <Section padding="m" background="olive" className="mt-12 md:mt-16 lg:mt-20 mb-16 md:mb-20 lg:mb-24">
-        <div className="cta-section text-center">
-          <h2 className="font-display text-display-sm text-cream mb-6">
-            Experience Our Facilities
-          </h2>
-          <Button
-            href="https://book-directonline.com/properties/fridaycreekredirect"
-            variant="primary"
-            external
-          >
-            Book Your Stay
-          </Button>
-        </div>
-      </Section>
     </>
   );
 }
