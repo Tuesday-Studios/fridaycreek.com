@@ -114,13 +114,8 @@
     will-change: transform;
   }
 
-  /* Homepage header starts hidden, fades in after hero animation */
+  /* Homepage header is always visible, just changes background */
   .homepage-header {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .homepage-header.show {
     opacity: 1;
     pointer-events: auto;
   }

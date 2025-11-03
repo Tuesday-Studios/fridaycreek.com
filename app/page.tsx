@@ -23,35 +23,6 @@ export default function Home() {
 
   // Initialize GSAP animations
   useGSAP(() => {
-    // Homepage header fade-in during scale hero animation
-    const header = document.getElementById("main-header");
-    if (header) {
-      // Wait for zoom to be 80% complete, then fade in header
-      gsap.to(header, {
-        opacity: 1,
-        duration: 0.8,
-        delay: 1.8, // After zoom animation (0.3 + 1.8 * 0.8 = ~1.74s)
-        ease: "power2.out",
-        onStart: () => {
-          header.classList.add("show");
-        },
-      });
-
-      // Animate navigation links when header appears
-      gsap.fromTo(
-        ".nav-link",
-        { y: -20, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.5,
-          stagger: 0.1,
-          delay: 2.0, // Slightly after header starts fading in
-          ease: "power2.out",
-        }
-      );
-    }
-
     // Card grid stagger animation
     scrollStagger(".card-item", {
       duration: 0.8,
