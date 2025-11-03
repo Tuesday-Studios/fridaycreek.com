@@ -42,6 +42,11 @@ export default function Home() {
       parallax(welcomeImageRef.current, { speed: -15 });
     }
 
+    // Pet section image with parallax
+    if (petImageRef.current) {
+      parallax(petImageRef.current, { speed: -15 });
+    }
+
     // CTA sections
     scrollFadeUp(".cta-section", {
       duration: 0.8,
@@ -179,7 +184,7 @@ export default function Home() {
       <Section background="olive" className="py-24 md:py-32 lg:py-40 relative">
         <WaveSeparator position="top" color="olive" />
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          <div className="relative aspect-square rounded-xl overflow-hidden">
+          <div ref={petImageRef} className="relative aspect-square rounded-xl overflow-hidden">
             <Image
               src="https://www.fridaycreek.com/wp-content/uploads/2016/11/Misty-by-Jessie-1024x1024.jpg"
               alt="Pet Friendly Accommodation at Friday Creek Retreat"
