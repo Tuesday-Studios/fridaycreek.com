@@ -2,7 +2,7 @@
 
 import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
-import contactData from "../../../building/crawled-data/contact.json";
+import contactData from "../../building/crawled-data/contact.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp } from "@/utils/gsapAnimations";
 import { Plane, Car, Train } from "lucide-react";

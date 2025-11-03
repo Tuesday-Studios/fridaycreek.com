@@ -5,7 +5,7 @@ import AnimatedText from "@/components/ui/AnimatedText";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
-import cottagesData from "../../../building/crawled-data/cottages.json";
+import cottagesData from "../../building/crawled-data/cottages.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, focusBlur } from "@/utils/gsapAnimations";
 import { useRef } from "react";

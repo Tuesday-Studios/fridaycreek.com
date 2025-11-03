@@ -4,7 +4,7 @@ import Image from "next/image";
 import Section from "@/components/layout/Section";
 import AnimatedText from "@/components/ui/AnimatedText";
 import MasonryGallery from "@/components/ui/MasonryGallery";
-import facilitiesData from "../../../building/crawled-data/facilities.json";
+import facilitiesData from "../../building/crawled-data/facilities.json";
 import { useGSAP, useReducedMotion } from "@/hooks/useGSAP";
 import { scrollStagger, scrollFadeUp } from "@/utils/gsapAnimations";
 import { Pizza, Coffee } from "lucide-react";
