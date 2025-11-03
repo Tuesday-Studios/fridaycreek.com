@@ -135,8 +135,20 @@
   .hero-slider,
   .welcome-image,
   .cta-section,
-  .nav-link {
+  .nav-link,
+  .contact-form,
+  .contact-info,
+  .travel-card,
+  .facility-card,
+  .dining-card {
     will-change: transform, opacity;
+  }
+
+  /* Fallback visibility - ensure content visible if GSAP doesn't fire */
+  .contact-form,
+  .contact-info {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 
   /* Remove will-change after animation completes */

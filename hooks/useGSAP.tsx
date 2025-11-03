@@ -8,6 +8,15 @@ import { useEffect } from "react";
 // Register GSAP plugins
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
+
+  // Refresh ScrollTrigger after page load to fix production build issues
+  if (typeof window !== "undefined") {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
+    });
+  }
 }
 
 /**
