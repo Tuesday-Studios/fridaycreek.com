@@ -152,13 +152,10 @@ export default function CottagesPage() {
         </div>
       </Section>
 
-      {/* Spacer */}
-      <div className="h-20 md:h-24 lg:h-32" />
-
       {/* Cottage Map */}
-      <Section padding="l" background="cream">
+      <Section padding="m" background="cream">
         <div className="max-w-4xl mx-auto">
-          <h3 className="font-display text-display-sm text-olive mb-8 text-center">
+          <h3 className="font-display text-display-sm text-olive mb-6 text-center">
             Cottage Layout
           </h3>
           <div className="relative w-full rounded-xl overflow-hidden shadow-lg">
