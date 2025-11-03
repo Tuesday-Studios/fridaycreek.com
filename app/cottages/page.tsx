@@ -153,7 +153,7 @@ export default function CottagesPage() {
       </Section>
 
       {/* Cottage Map */}
-      <Section padding="m" background="cream">
+      <Section padding="l" background="cream">
         <div className="max-w-4xl mx-auto">
           <h3 className="font-display text-display-sm text-olive mb-6 text-center">
             Cottage Layout
