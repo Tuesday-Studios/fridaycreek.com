@@ -295,3 +295,130 @@ export const navLinkStagger = (elements: gsap.TweenTarget) => {
     }
   );
 };
+
+/**
+ * Parallax effect - elements move at different speeds than scroll
+ */
+export const parallax = (
+  element: gsap.TweenTarget,
+  config: { speed?: number } = {}
+) => {
+  const { speed = -20 } = config;
+
+  return gsap.to(element, {
+    yPercent: speed,
+    ease: "none",
+    scrollTrigger: {
+      trigger: element,
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 0.1,
+      force3D: true,
+    },
+  });
+};
+
+/**
+ * Organic fade and scale animation with expo easing
+ */
+export const organicFadeScale = (
+  element: gsap.TweenTarget,
+  config: AnimationConfig = {}
+) => {
+  const { duration = 1.2, delay = 0, stagger = 0.075 } = config;
+
+  return gsap.fromTo(
+    element,
+    { y: 40, scale: 0.95, autoAlpha: 0 },
+    {
+      y: 0,
+      scale: 1,
+      autoAlpha: 1,
+      duration,
+      delay,
+      stagger,
+      ease: "expo.out",
+      force3D: true,
+      scrollTrigger: {
+        trigger: element,
+        start: "top bottom-=20%",
+        toggleActions: "play none none none",
+      },
+    }
+  );
+};
+
+/**
+ * Focus blur effect - highlights hovered element and dims others
+ */
+export const focusBlur = (container: HTMLElement, itemSelector: string) => {
+  const items = container.querySelectorAll(itemSelector);
+
+  const handleMouseEnter = (e: Event) => {
+    const target = e.currentTarget as HTMLElement;
+    items.forEach((item) => {
+      if (item !== target) {
+        gsap.to(item, {
+          opacity: 0.5,
+          duration: 0.2,
+          ease: "power2.out",
+        });
+      }
+    });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(items, {
+      opacity: 1,
+      duration: 0.2,
+      ease: "power2.out",
+    });
+  };
+
+  items.forEach((item) => {
+    item.addEventListener("mouseenter", handleMouseEnter);
+  });
+
+  container.addEventListener("mouseleave", handleMouseLeave);
+
+  return () => {
+    items.forEach((item) => {
+      item.removeEventListener("mouseenter", handleMouseEnter);
+    });
+    container.removeEventListener("mouseleave", handleMouseLeave);
+  };
+};
+
+/**
+ * Image scale with pin effect - dramatic zoom while scrolling
+ */
+export const imageScalePin = (
+  container: gsap.TweenTarget,
+  image: gsap.TweenTarget,
+  config: { duration?: number; startScale?: number } = {}
+) => {
+  const { duration = 1, startScale = 1.3 } = config;
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: "top top",
+      end: "+=100%",
+      scrub: 1,
+      pin: true,
+    },
+  });
+
+  tl.fromTo(
+    image,
+    { scale: startScale },
+    {
+      scale: 1,
+      duration,
+      ease: "none",
+      force3D: true,
+    }
+  );
+
+  return tl;
+};
